@@ -133,6 +133,7 @@ public Camera PlayerCamera;
 }
       private void Start()
 {
+    
     _cinemachineTargetYaw = CinemachineCameraTarget.transform.rotation.eulerAngles.y;
     _hasAnimator = TryGetComponent(out _animator);
     _controller = GetComponent<CharacterController>();
@@ -158,14 +159,12 @@ public Camera PlayerCamera;
 
     _jumpTimeoutDelta = JumpTimeout;
     _fallTimeoutDelta = FallTimeout;
-}        private void Update()
-        {
-            _hasAnimator = TryGetComponent(out _animator);
-            JumpAndGravity();
-            GroundedCheck();
-            Move();
-        }
-
+}       private void Update()
+{
+    GroundedCheck();    // 1. Primeiro verifica se está tocando o chão
+    JumpAndGravity();   // 2. Depois processa o pulo e a gravidade
+    Move();             // 3. Por fim aplica o movimento
+}
         private void LateUpdate()
         {
             CameraRotation();
