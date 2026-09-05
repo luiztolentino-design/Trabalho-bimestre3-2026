@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 #if ENABLE_INPUT_SYSTEM 
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.Users;
 #endif
 
 namespace StarterAssets
@@ -11,8 +12,11 @@ namespace StarterAssets
 #endif
     public class ThirdPersonController : MonoBehaviour
     {
-        [Header("Player")]
-        [Tooltip("Move speed of the character in m/s")]
+        [Header("Multiplayer & Atividade")]
+       
+public int PlayerID = 1; 
+public float BônusVelocidadePorMoeda = 0.5f; 
+public Camera PlayerCamera;
         public float MoveSpeed = 2.0f;
         [Tooltip("Sprint speed of the character in m/s")]
         public float SprintSpeed = 5.335f;
@@ -116,33 +120,45 @@ namespace StarterAssets
             }
         }
 
-        private void Awake()
-        {
-            if (_mainCamera == null)
-            {
-                _mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
-            }
-        }
+       private void Awake()
+{
+    if (PlayerCamera != null)
+    {
+        _mainCamera = PlayerCamera.gameObject;
+    }
+    else if (_mainCamera == null)
+    {
+        _mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
+    }
+}
+      private void Start()
+{
+    _cinemachineTargetYaw = CinemachineCameraTarget.transform.rotation.eulerAngles.y;
+    _hasAnimator = TryGetComponent(out _animator);
+    _controller = GetComponent<CharacterController>();
+    _input = GetComponent<StarterAssetsInputs>();
 
-        private void Start()
-        {
-            _cinemachineTargetYaw = CinemachineCameraTarget.transform.rotation.eulerAngles.y;
-            _hasAnimator = TryGetComponent(out _animator);
-            _controller = GetComponent<CharacterController>();
-            _input = GetComponent<StarterAssetsInputs>();
 #if ENABLE_INPUT_SYSTEM 
-            _playerInput = GetComponent<PlayerInput>();
+    _playerInput = GetComponent<PlayerInput>();
+
+    if (_playerInput != null && Keyboard.current != null)
+    {
+        // Define qual esquema usar com base no PlayerID
+        string schemeName = (PlayerID == 1) ? "Player1_Scheme" : "Player2_Scheme";
+
+        // Força a Unity a vincular o teclado físico a este esquema específico
+        _playerInput.SwitchCurrentControlScheme(schemeName, Keyboard.current);
+    }
 #endif
-            AssignAnimationIDs();
 
-            _cameraStartingPosition = CinemachineCameraTarget.transform.position;
-            _cameraStartingRotation = CinemachineCameraTarget.transform.rotation;
+    AssignAnimationIDs();
 
-            _jumpTimeoutDelta = JumpTimeout;
-            _fallTimeoutDelta = FallTimeout;
-        }
+    _cameraStartingPosition = CinemachineCameraTarget.transform.position;
+    _cameraStartingRotation = CinemachineCameraTarget.transform.rotation;
 
-        private void Update()
+    _jumpTimeoutDelta = JumpTimeout;
+    _fallTimeoutDelta = FallTimeout;
+}        private void Update()
         {
             _hasAnimator = TryGetComponent(out _animator);
             JumpAndGravity();
@@ -155,18 +171,27 @@ namespace StarterAssets
             CameraRotation();
         }
 
-        // --- ADICIONADO PARA A ATIVIDADE ---
-        private void OnTriggerEnter(Collider other)
+      private void OnTriggerEnter(Collider other)
+{
+    if (other.CompareTag("Coin"))
+    {
+        Destroy(other.gameObject);
+        _moedasColetadas++;
+
+        // Aumenta a velocidade do jogador que coletou
+        MoveSpeed += BônusVelocidadePorMoeda;
+        SprintSpeed += BônusVelocidadePorMoeda;
+
+        // Dispara a notificação via Observer
+        PlayerOM.OnCoinCountChanged?.Invoke(PlayerID, _moedasColetadas);
+
+        // Notifica o Singleton do GameManager
+        if (GameManager.Instance != null)
         {
-            if (other.CompareTag("Coin"))
-            {
-                Destroy(other.gameObject);
-                _moedasColetadas++;
-                // Dispara o evento para qualquer UI que esteja escutando
-                PlayerOM.OnCoinCountChanged?.Invoke(_moedasColetadas);
-            }
+            GameManager.Instance.RegistrarMoedaColetada(PlayerID, _moedasColetadas);
         }
-        // ------------------------------------
+    }
+}
 
         private void AssignAnimationIDs()
         {

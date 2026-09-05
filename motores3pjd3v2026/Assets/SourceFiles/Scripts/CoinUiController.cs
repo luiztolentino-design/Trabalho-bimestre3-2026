@@ -1,30 +1,64 @@
 using UnityEngine;
-using TMPro; // Necessário se estiver usando TextMeshPro
+using TMPro;
 
 public class CoinUIController : MonoBehaviour
 {
-    private TextMeshProUGUI textoMoedas;
+    [Header("Placar Único")]
+    [SerializeField] private TextMeshProUGUI textoPlacar; // Arraste seu texto único aqui
 
-    private void Awake()
+    [Header("Painel de Vitória")]
+    [SerializeField] private GameObject painelVencedor;
+    [SerializeField] private TextMeshProUGUI textoVencedor;
+
+    private int _moedasP1 = 0;
+    private int _moedasP2 = 0;
+
+    private void Start()
     {
-        textoMoedas = GetComponent<TextMeshProUGUI>();
+        if (painelVencedor != null)
+        {
+           // painelVencedor.SetActive(false);
+        }
+
+        AtualizarPlacar();
     }
 
-    // Quando a interface é ativada, ela se INSCREVE no canal
     private void OnEnable()
     {
-        PlayerOM.OnCoinCountChanged += AtualizarTextoMoedas;
+        PlayerOM.OnCoinCountChanged += OnCoinCollected;
+        PlayerOM.OnGameOver += ExibirVencedor;
     }
 
-    // Quando a interface é desativada, ela se DESINSCREVE (Evita memory leaks/erros)
     private void OnDisable()
     {
-        PlayerOM.OnCoinCountChanged -= AtualizarTextoMoedas;
+        PlayerOM.OnCoinCountChanged -= OnCoinCollected;
+        PlayerOM.OnGameOver -= ExibirVencedor;
     }
 
-    // Método que processa a notificação recebida do PlayerOM
-    private void AtualizarTextoMoedas(int totalAtual)
+    private void OnCoinCollected(int playerID, int totalAtual)
     {
-        textoMoedas.text = "Moedas: " + totalAtual;
+        if (playerID == 1) _moedasP1 = totalAtual;
+        else if (playerID == 2) _moedasP2 = totalAtual;
+
+        AtualizarPlacar();
+    }
+
+    private void AtualizarPlacar()
+    {
+        int meta = (GameManager.Instance != null) ? GameManager.Instance.MoedasParaVencer : 6;
+
+        if (textoPlacar != null)
+        {
+            textoPlacar.text = $"P1: {_moedasP1}/{meta}  |  P2: {_moedasP2}/{meta}";
+        }
+    }
+
+    private void ExibirVencedor(string mensagem)
+    {
+        if (painelVencedor != null && textoVencedor != null)
+        {
+            textoVencedor.text = mensagem;
+            painelVencedor.SetActive(true);
+        }
     }
 }
