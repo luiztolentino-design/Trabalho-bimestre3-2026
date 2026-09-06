@@ -193,6 +193,19 @@
         "com.unity.modules.audio": "1.0.0",
         "com.unity.modules.physics2d": "1.0.0",
         "com.unity.modules.physics": "1.0.0"
+<<<<<<< HEAD
+=======
+      }
+    },
+    "com.unity.ui.test-framework": {
+      "version": "6.6.0",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {
+        "com.unity.ext.nunit": "2.0.3",
+        "com.unity.modules.imgui": "1.0.0",
+        "com.unity.modules.uielements": "1.0.0"
+>>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
       }
     },
     "com.unity.modules.accessibility": {

@@ -48,6 +48,11 @@ namespace StarterAssets
 		{
 			SprintInput(value.isPressed);
 		}
+
+		public void OnInteract(InputValue value)
+		{
+			if(value.isPressed) InteractOM.Interact();
+		}
 #endif
 
 			private void Awake()

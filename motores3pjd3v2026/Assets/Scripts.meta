@@ -1,6 +1,10 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:motores3pjd3v2026/Assets/Scripts.meta
 guid: ba46eb93a85b3d54abe1b3ac63ec15fc
 folderAsset: yes
+========
+guid: 37f1293e0dfb8864281e941bcaaa3ba9
+>>>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8:motores3pjd3v2026/Assets/Scenes/GUI.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 

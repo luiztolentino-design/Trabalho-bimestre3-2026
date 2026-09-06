@@ -1,5 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+<<<<<<< HEAD
 --- !u!114 &-8294930993225875323
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -24,6 +25,9 @@ MonoBehaviour:
     m_AutoStart: 1
     m_Loop: 1
 --- !u!114 &-5177484984013439987
+=======
+--- !u!114 &-3943642592428221096
+>>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -41,6 +45,85 @@ MonoBehaviour:
     MaskPreset: {fileID: 0}
   Text:
     m_Untranslated: Want to continue your Unity learning journey? Below you'll find useful links to more Unity Learn content that will help you build on the foundations you've already built.
+<<<<<<< HEAD
+=======
+--- !u!114 &-853737769734517262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff771ccdf4150419d9ff4d342b069aae, type: 3}
+  m_Name: 0_Future_learning
+  m_EditorClassIdentifier: 
+  <IndexInTutorial>k__BackingField: 0
+  Title:
+    m_Untranslated: Future learning
+  m_LegacyParagraphs:
+    m_Items: []
+  m_PageParagraphs:
+  - {fileID: 3172717649754769427}
+  - {fileID: -3943642592428221096}
+  - {fileID: 3993096148914785923}
+  m_CameraSettings:
+    m_CameraMode: 0
+    m_FocusMode: 0
+    m_Orthographic: 0
+    m_Size: 0
+    m_Pivot: {x: 0, y: 0, z: 0}
+    m_Rotation: {x: 0, y: 0, z: 0, w: 0}
+    m_FrameObject:
+      m_SceneGuid: 
+      m_GameObjectGuid: 
+      m_SerializedComponentType:
+        m_TypeName: 
+      m_ComponentIndex: 0
+      m_AssetObject: {fileID: 0}
+      m_Prefab: {fileID: 0}
+    m_Enabled: 0
+  NextButton:
+    m_Untranslated: Next
+  DoneButton:
+    m_Untranslated: Done
+  m_CompletedSound: {fileID: 0}
+  m_FaqEntries: []
+  m_AutoAdvance: 0
+  Showing:
+    m_PersistentCalls:
+      m_Calls: []
+  Shown:
+    m_PersistentCalls:
+      m_Calls: []
+  Staying:
+    m_PersistentCalls:
+      m_Calls: []
+  CriteriaValidated:
+    m_PersistentCalls:
+      m_Calls: []
+  MaskingSettingsChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  NonMaskingSettingsChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnBeforePageShown:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnAfterPageShown:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnTutorialPageStay:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnBeforeTutorialQuit:
+    m_PersistentCalls:
+      m_Calls: []
+  m_NextButton: Next
+  m_DoneButton: Done
+>>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59,7 +142,11 @@ MonoBehaviour:
   m_LessonId: 9d20f6d6-ff53-4698-91ce-846a53d5f5d2
   m_Pages:
     m_Items:
+<<<<<<< HEAD
     - {fileID: 6474418096021226547}
+=======
+    - {fileID: -853737769734517262}
+>>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
   m_SceneManagementBehavior: 1
   m_ReturnToPreviousScenes: 1
   m_Scenes: []
@@ -124,7 +211,34 @@ MonoBehaviour:
   m_Scene: {fileID: 0}
   m_TutorialTitle: 
   m_FaqEntries: []
+<<<<<<< HEAD
 --- !u!114 &6387129168605792553
+=======
+--- !u!114 &3172717649754769427
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5b43af98cf241a48618341008f648cb, type: 3}
+  m_Name: MediaParagraph
+  m_EditorClassIdentifier: Unity.Tutorials.Editor::Unity.Tutorials.Editor.Paragraphs.MediaParagraph
+  m_MaskingSettings:
+    m_MaskingEnabled: 1
+    m_UnmaskedViews: []
+    MaskPreset: {fileID: 0}
+  Media:
+    m_ContentType: 0
+    m_Image: {fileID: 2800000, guid: 4b290361983d35f4cb73ddf651f1dc1f, type: 3}
+    m_VideoClip: {fileID: 0}
+    m_Url: 
+    m_AutoStart: 1
+    m_Loop: 1
+--- !u!114 &3993096148914785923
+>>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -147,6 +261,7 @@ MonoBehaviour:
   m_CriteriaCompletion: 0
   m_Criteria:
     m_Items: []
+<<<<<<< HEAD
 --- !u!114 &6474418096021226547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -223,3 +338,5 @@ MonoBehaviour:
       m_Calls: []
   m_NextButton: Next
   m_DoneButton: Done
+=======
+>>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8

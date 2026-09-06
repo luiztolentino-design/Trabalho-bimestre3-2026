@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 #if ENABLE_INPUT_SYSTEM 
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.Users;
 #endif
 
 namespace StarterAssets
@@ -11,6 +12,7 @@ namespace StarterAssets
 #endif
     public class ThirdPersonController : MonoBehaviour
     {
+<<<<<<< HEAD
         [Header("Configurações Multiplayer")]
         public int PlayerID = 1;
         public float BonusVelocidadePorMoeda = 0.5f;
@@ -19,6 +21,20 @@ namespace StarterAssets
         public float MoveSpeed = 2.0f;
         public float SprintSpeed = 5.335f;
         [Range(0.0f, 0.3f)] public float RotationSmoothTime = 0.12f;
+=======
+        [Header("Multiplayer & Atividade")]
+       
+public int PlayerID = 1; 
+public float BônusVelocidadePorMoeda = 0.5f; 
+public Camera PlayerCamera;
+        public float MoveSpeed = 2.0f;
+        [Tooltip("Sprint speed of the character in m/s")]
+        public float SprintSpeed = 5.335f;
+        [Tooltip("How fast the character turns to face movement direction")]
+        [Range(0.0f, 0.3f)]
+        public float RotationSmoothTime = 0.12f;
+        [Tooltip("Acceleration and deceleration")]
+>>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
         public float SpeedChangeRate = 10.0f;
 
         public AudioClip LandingAudioClip;
@@ -27,37 +43,82 @@ namespace StarterAssets
 
         [Space(10)]
         public float JumpHeight = 1.2f;
+<<<<<<< HEAD
         public float Gravity = -15.0f;
         public float JumpTimeout = 0.50f;
+=======
+        [Tooltip("The character uses its own gravity value. The engine default is -9.81f")]
+        public float Gravity = -15.0f;
+        [Space(10)]
+        [Tooltip("Time required to pass before being able to jump again. Set to 0f to instantly jump again")]
+        public float JumpTimeout = 0.50f;
+        [Tooltip("Time required to pass before entering the fall state. Useful for walking down stairs")]
+>>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
         public float FallTimeout = 0.15f;
 
         [Header("Player Grounded")]
         public bool Grounded = true;
+<<<<<<< HEAD
         public float GroundedOffset = -0.14f;
         public float GroundedRadius = 0.28f;
+=======
+        [Tooltip("Useful for rough ground")]
+        public float GroundedOffset = -0.14f;
+        [Tooltip("The radius of the grounded check. Should match the radius of the CharacterController")]
+        public float GroundedRadius = 0.28f;
+        [Tooltip("What layers the character uses as ground")]
+>>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
         public LayerMask GroundLayers;
 
         [Header("Cinemachine")]
         public GameObject CinemachineCameraTarget;
+<<<<<<< HEAD
         public float TopClamp = 70.0f;
         public float BottomClamp = -30.0f;
         public float CameraAngleOverride = 0.0f;
         public bool LockCameraPosition = false;
         public Vector2 LookSensitivity = new Vector2(1.5f, 1.0f);
 
+=======
+        [Tooltip("How far in degrees can you move the camera up")]
+        public float TopClamp = 70.0f;
+        [Tooltip("How far in degrees can you move the camera down")]
+        public float BottomClamp = -30.0f;
+        [Tooltip("Additional degress to override the camera. Useful for fine tuning camera position when locked")]
+        public float CameraAngleOverride = 0.0f;
+        [Tooltip("For locking the camera position on all axis")]
+        public bool LockCameraPosition = false;
+        public Vector2 LookSensitivity = new Vector2(7.5f, 5.0f);
+
+        // cinemachine
+>>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
         private float _cinemachineTargetYaw;
         private float _cinemachineTargetPitch;
         private Vector3 _cameraStartingLocalPosition;
         private Quaternion _cameraStartingLocalRotation;
 
+<<<<<<< HEAD
         public bool IsRespawning { get; set; } = false;
 
+=======
+        // Camera starting position and rotation
+        private Vector3 _cameraStartingPosition;
+        private Quaternion _cameraStartingRotation;
+
+        public bool IsRespawning { get; set; } = false;
+
+        // player
+>>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
         private float _speed;
         private float _animationBlend;
         private float _targetRotation = 0.0f;
         private float _rotationVelocity;
         private float _verticalVelocity;
         private float _terminalVelocity = 53.0f;
+        
+        // --- ADICIONADO PARA A ATIVIDADE ---
+        private int _moedasColetadas = 0;
+        // ------------------------------------
 
         private int _moedasColetadas = 0;
 
@@ -93,6 +154,7 @@ namespace StarterAssets
             }
         }
 
+<<<<<<< HEAD
         private void Awake()
         {
             // Busca a câmera principal de acordo com o jogador
@@ -142,11 +204,59 @@ namespace StarterAssets
             Move();
         }
 
+=======
+       private void Awake()
+{
+    if (PlayerCamera != null)
+    {
+        _mainCamera = PlayerCamera.gameObject;
+    }
+    else if (_mainCamera == null)
+    {
+        _mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
+    }
+}
+      private void Start()
+{
+    
+    _cinemachineTargetYaw = CinemachineCameraTarget.transform.rotation.eulerAngles.y;
+    _hasAnimator = TryGetComponent(out _animator);
+    _controller = GetComponent<CharacterController>();
+    _input = GetComponent<StarterAssetsInputs>();
+
+#if ENABLE_INPUT_SYSTEM 
+    _playerInput = GetComponent<PlayerInput>();
+
+    if (_playerInput != null && Keyboard.current != null)
+    {
+        // Define qual esquema usar com base no PlayerID
+        string schemeName = (PlayerID == 1) ? "Player1_Scheme" : "Player2_Scheme";
+
+        // Força a Unity a vincular o teclado físico a este esquema específico
+        _playerInput.SwitchCurrentControlScheme(schemeName, Keyboard.current);
+    }
+#endif
+
+    AssignAnimationIDs();
+
+    _cameraStartingPosition = CinemachineCameraTarget.transform.position;
+    _cameraStartingRotation = CinemachineCameraTarget.transform.rotation;
+
+    _jumpTimeoutDelta = JumpTimeout;
+    _fallTimeoutDelta = FallTimeout;
+}       private void Update()
+{
+    GroundedCheck();    // 1. Primeiro verifica se está tocando o chão
+    JumpAndGravity();   // 2. Depois processa o pulo e a gravidade
+    Move();             // 3. Por fim aplica o movimento
+}
+>>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
         private void LateUpdate()
         {
             CameraRotation();
         }
 
+<<<<<<< HEAD
         private void VincularCinemachine()
         {
             string nomeVirtualCam = (PlayerID == 1) ? "PlayerFollowCamera1" : "PlayerFollowCamera2";
@@ -192,6 +302,29 @@ namespace StarterAssets
                 PlayerObserverManager.NotifyCoinCollected(PlayerID, _moedasColetadas);
             }
         }
+=======
+      private void OnTriggerEnter(Collider other)
+{
+    if (other.CompareTag("Coin"))
+    {
+        Destroy(other.gameObject);
+        _moedasColetadas++;
+
+        // Aumenta a velocidade do jogador que coletou
+        MoveSpeed += BônusVelocidadePorMoeda;
+        SprintSpeed += BônusVelocidadePorMoeda;
+
+        // Dispara a notificação via Observer
+        PlayerOM.OnCoinCountChanged?.Invoke(PlayerID, _moedasColetadas);
+
+        // Notifica o Singleton do GameManager
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.RegistrarMoedaColetada(PlayerID, _moedasColetadas);
+        }
+    }
+}
+>>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
 
         private void AssignAnimationIDs()
         {
@@ -207,17 +340,31 @@ namespace StarterAssets
             Vector3 spherePosition = new Vector3(transform.position.x, transform.position.y - GroundedOffset, transform.position.z);
             Grounded = Physics.CheckSphere(spherePosition, GroundedRadius, GroundLayers, QueryTriggerInteraction.Ignore);
 
+<<<<<<< HEAD
             if (_hasAnimator) _animator.SetBool(_animIDGrounded, Grounded);
+=======
+            if (_hasAnimator)
+            {
+                _animator.SetBool(_animIDGrounded, Grounded);
+            }
+>>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
         }
 
         private void CameraRotation()
         {
             if (IsRespawning)
             {
+<<<<<<< HEAD
                 _cinemachineTargetYaw = transform.eulerAngles.y;
                 _cinemachineTargetPitch = 0f;
                 CinemachineCameraTarget.transform.localPosition = _cameraStartingLocalPosition;
                 CinemachineCameraTarget.transform.localRotation = _cameraStartingLocalRotation;
+=======
+                _cinemachineTargetYaw = 0f;
+                _cinemachineTargetPitch = 0f;
+                CinemachineCameraTarget.transform.position = _cameraStartingPosition;
+                CinemachineCameraTarget.transform.rotation = _cameraStartingRotation;
+>>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
                 IsRespawning = false;
                 return;
             }
@@ -228,11 +375,14 @@ namespace StarterAssets
                 _cinemachineTargetYaw += _input.look.x * deltaTimeMultiplier * LookSensitivity.x;
                 _cinemachineTargetPitch += _input.look.y * deltaTimeMultiplier * LookSensitivity.y;
             }
+<<<<<<< HEAD
             // Auto-alinhamento automático com a frente do robô
             else if (_input.move.sqrMagnitude >= _threshold)
             {
                 _cinemachineTargetYaw = Mathf.LerpAngle(_cinemachineTargetYaw, transform.eulerAngles.y, Time.deltaTime * 4.0f);
             }
+=======
+>>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
 
             _cinemachineTargetYaw = ClampAngle(_cinemachineTargetYaw, float.MinValue, float.MaxValue);
             _cinemachineTargetPitch = ClampAngle(_cinemachineTargetPitch, BottomClamp, TopClamp);
@@ -266,10 +416,14 @@ namespace StarterAssets
 
             if (_input.move != Vector2.zero)
             {
+<<<<<<< HEAD
                 float targetRotationAngle = Mathf.Atan2(inputDirection.x, inputDirection.z) * Mathf.Rad2Deg;
                 if (_mainCamera != null) targetRotationAngle += _mainCamera.transform.eulerAngles.y;
 
                 _targetRotation = targetRotationAngle;
+=======
+                _targetRotation = Mathf.Atan2(inputDirection.x, inputDirection.z) * Mathf.Rad2Deg + _mainCamera.transform.eulerAngles.y;
+>>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
                 float rotation = Mathf.SmoothDampAngle(transform.eulerAngles.y, _targetRotation, ref _rotationVelocity, RotationSmoothTime);
                 transform.rotation = Quaternion.Euler(0.0f, rotation, 0.0f);
             }
@@ -320,6 +474,7 @@ namespace StarterAssets
             if (lfAngle > 360f) lfAngle -= 360f;
             return Mathf.Clamp(lfAngle, lfMin, lfMax);
         }
+<<<<<<< HEAD
         public void ResetCameraRotation(float targetYaw)
 {
     _cinemachineTargetYaw = targetYaw;
@@ -331,5 +486,43 @@ namespace StarterAssets
         CinemachineCameraTarget.transform.rotation = Quaternion.Euler(_cinemachineTargetPitch, _cinemachineTargetYaw, 0.0f);
     }
 }
+=======
+
+        private void OnDrawGizmosSelected()
+        {
+            Color transparentGreen = new Color(0.0f, 1.0f, 0.0f, 0.35f);
+            Color transparentRed = new Color(1.0f, 0.0f, 0.0f, 0.35f);
+            if (Grounded) Gizmos.color = transparentGreen;
+            else Gizmos.color = transparentRed;
+            Gizmos.DrawSphere(new Vector3(transform.position.x, transform.position.y - GroundedOffset, transform.position.z), GroundedRadius);
+        }
+
+        private void OnFootstep(AnimationEvent animationEvent)
+        {
+            if (animationEvent.animatorClipInfo.weight > 0.5f)
+            {
+                if (FootstepAudioClips.Length > 0)
+                {
+                    var index = Random.Range(0, FootstepAudioClips.Length);
+                    AudioSource.PlayClipAtPoint(FootstepAudioClips[index], transform.TransformPoint(_controller.center), FootstepAudioVolume);
+                }
+            }
+        }
+
+        private void OnLand(AnimationEvent animationEvent)
+        {
+            if (animationEvent.animatorClipInfo.weight > 0.5f)
+            {
+                AudioSource.PlayClipAtPoint(LandingAudioClip, transform.TransformPoint(_controller.center), FootstepAudioVolume);
+            }
+        }
+
+        public void ResetCameraRotation(float targetYaw)
+        {
+            _cinemachineTargetYaw = targetYaw;
+            _cinemachineTargetPitch = 0f;
+            CinemachineCameraTarget.transform.rotation = Quaternion.Euler(_cinemachineTargetPitch, _cinemachineTargetYaw, 0f);
+        }
+>>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
     }
 }

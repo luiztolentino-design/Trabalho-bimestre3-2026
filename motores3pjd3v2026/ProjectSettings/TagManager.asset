@@ -11,8 +11,11 @@ TagManager:
   - Cube_Spawn_Point_1
   - Cube_Spawn_Point_2
   - Coin
+<<<<<<< HEAD
   - CamP1
   - CamP2
+=======
+>>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
   layers:
   - Default
   - TransparentFX
@@ -20,10 +23,17 @@ TagManager:
   - 
   - Water
   - UI
+<<<<<<< HEAD
   - CamP1
   - CamP2
   - 
   - 
+=======
+  - 
+  - 
+  - P1_Layer
+  - P2_Layer
+>>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
   - 
   - 
   - 

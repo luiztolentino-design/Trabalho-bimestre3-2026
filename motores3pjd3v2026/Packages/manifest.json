@@ -7,6 +7,10 @@
     "com.unity.multiplayer.center": "2.0.1",
     "com.unity.render-pipelines.universal": "17.6.0",
     "com.unity.ugui": "2.6.0",
+<<<<<<< HEAD
+=======
+    "com.unity.ui.test-framework": "6.6.0",
+>>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
     "com.unity.modules.accessibility": "1.0.0",
     "com.unity.modules.adaptiveperformance": "1.0.0",
     "com.unity.modules.ai": "1.0.0",

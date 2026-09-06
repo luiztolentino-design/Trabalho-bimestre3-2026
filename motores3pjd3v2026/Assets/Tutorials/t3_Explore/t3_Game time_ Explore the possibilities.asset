@@ -1,6 +1,10 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+<<<<<<< HEAD
 --- !u!114 &-8612261561486648624
+=======
+--- !u!114 &-8420916506891149990
+>>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,6 +14,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ff771ccdf4150419d9ff4d342b069aae, type: 3}
+<<<<<<< HEAD
   m_Name: 5_Audio
   m_EditorClassIdentifier: 
   <IndexInTutorial>k__BackingField: 5
@@ -20,6 +25,18 @@ MonoBehaviour:
   m_PageParagraphs:
   - {fileID: -5370059636478807496}
   - {fileID: 288935031537292037}
+=======
+  m_Name: 1_Animation
+  m_EditorClassIdentifier: 
+  <IndexInTutorial>k__BackingField: 1
+  Title:
+    m_Untranslated: Animation
+  m_LegacyParagraphs:
+    m_Items: []
+  m_PageParagraphs:
+  - {fileID: -6044508630809371802}
+  - {fileID: 7876857493059971625}
+>>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
   m_CameraSettings:
     m_CameraMode: 0
     m_FocusMode: 0
@@ -75,7 +92,11 @@ MonoBehaviour:
       m_Calls: []
   m_NextButton: Next
   m_DoneButton: Done
+<<<<<<< HEAD
 --- !u!114 &-8506516685759523259
+=======
+--- !u!114 &-8001570185796302744
+>>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -89,6 +110,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.Tutorials.Editor::Unity.Tutorials.Editor.Paragraphs.MediaParagraph
   m_MaskingSettings:
     m_MaskingEnabled: 1
+<<<<<<< HEAD
     m_UnmaskedViews: []
     MaskPreset: {fileID: 0}
   Media:
@@ -174,6 +196,87 @@ MonoBehaviour:
   m_NextButton: Next
   m_DoneButton: Done
 --- !u!114 &-8315897325323377817
+=======
+    m_UnmaskedViews:
+    - m_SelectorType: 1
+      m_ViewType:
+        m_TypeName: 
+      m_OpenAndFocus: 0
+      m_EditorWindowType:
+        m_TypeName: UnityEditor.ProjectBrowser, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      m_AlternateEditorWindowTypes:
+        m_Items: []
+      m_MaskType: 0
+      m_MaskSizeModifier: 0
+      m_UnmaskedControls: []
+    - m_SelectorType: 1
+      m_ViewType:
+        m_TypeName: 
+      m_OpenAndFocus: 0
+      m_EditorWindowType:
+        m_TypeName: UnityEditor.SceneHierarchyWindow, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      m_AlternateEditorWindowTypes:
+        m_Items: []
+      m_MaskType: 0
+      m_MaskSizeModifier: 0
+      m_UnmaskedControls: []
+    - m_SelectorType: 1
+      m_ViewType:
+        m_TypeName: 
+      m_OpenAndFocus: 0
+      m_EditorWindowType:
+        m_TypeName: UnityEditor.GameView, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      m_AlternateEditorWindowTypes:
+        m_Items: []
+      m_MaskType: 0
+      m_MaskSizeModifier: 0
+      m_UnmaskedControls: []
+    - m_SelectorType: 0
+      m_ViewType:
+        m_TypeName: UnityEditor.Toolbar, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      m_OpenAndFocus: 0
+      m_EditorWindowType:
+        m_TypeName: UnityEditor.GameView, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      m_AlternateEditorWindowTypes:
+        m_Items: []
+      m_MaskType: 0
+      m_MaskSizeModifier: 0
+      m_UnmaskedControls:
+      - m_SelectorMode: 5
+        m_SelectorMatchType: 0
+        m_GUIContent:
+          m_Text: 
+          m_Image: {fileID: 0}
+          m_Tooltip: 
+          m_TextWithWhitespace: 
+        m_ControlName: 
+        m_PropertyPath: 
+        m_TargetType:
+          m_TypeName: 
+        m_GUIStyleName: 
+        m_ObjectReference:
+          m_SceneObjectReference:
+            m_SceneGuid: 
+            m_GameObjectGuid: 
+            m_SerializedComponentType:
+              m_TypeName: 
+            m_ComponentIndex: 0
+            m_AssetObject: {fileID: 0}
+            m_Prefab: {fileID: 0}
+          m_FutureObjectReference: {fileID: 0}
+        m_VisualElementClassName: 
+        m_VisualElementName: Play
+        m_VisualElementTypeName: 
+    MaskPreset: {fileID: 0}
+  Media:
+    m_ContentType: 1
+    m_Image: {fileID: 0}
+    m_VideoClip: {fileID: 32900000, guid: 685b155bf8cd0bf46bcec2d10b1e7d1b, type: 3}
+    m_Url: 
+    m_AutoStart: 0
+    m_Loop: 0
+--- !u!114 &-7998422070015751571
+>>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -187,6 +290,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.Tutorials.Editor::Unity.Tutorials.Editor.Paragraphs.MediaParagraph
   m_MaskingSettings:
     m_MaskingEnabled: 1
+<<<<<<< HEAD
     m_UnmaskedViews: []
     MaskPreset: {fileID: 0}
   Media:
@@ -197,6 +301,162 @@ MonoBehaviour:
     m_AutoStart: 1
     m_Loop: 1
 --- !u!114 &-8282022881812526367
+=======
+    m_UnmaskedViews:
+    - m_SelectorType: 1
+      m_ViewType:
+        m_TypeName: 
+      m_OpenAndFocus: 0
+      m_EditorWindowType:
+        m_TypeName: UnityEditor.SceneView, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      m_AlternateEditorWindowTypes:
+        m_Items: []
+      m_MaskType: 0
+      m_MaskSizeModifier: 0
+      m_UnmaskedControls:
+      - m_SelectorMode: 5
+        m_SelectorMatchType: 0
+        m_GUIContent:
+          m_Text: 
+          m_Image: {fileID: 0}
+          m_Tooltip: 
+          m_TextWithWhitespace: 
+        m_ControlName: 
+        m_PropertyPath: 
+        m_TargetType:
+          m_TypeName: 
+        m_GUIStyleName: 
+        m_ObjectReference:
+          m_SceneObjectReference:
+            m_SceneGuid: 
+            m_GameObjectGuid: 
+            m_SerializedComponentType:
+              m_TypeName: 
+            m_ComponentIndex: 0
+            m_AssetObject: {fileID: 0}
+            m_Prefab: {fileID: 0}
+          m_FutureObjectReference: {fileID: 0}
+        m_VisualElementClassName: unity-inspector-element--imgui
+        m_VisualElementName: Add a moving platform (Tutorial Page)Inspector
+        m_VisualElementTypeName: UnityEditor.UIElements.InspectorElement
+    - m_SelectorType: 1
+      m_ViewType:
+        m_TypeName: 
+      m_OpenAndFocus: 0
+      m_EditorWindowType:
+        m_TypeName: UnityEditor.GameView, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      m_AlternateEditorWindowTypes:
+        m_Items: []
+      m_MaskType: 0
+      m_MaskSizeModifier: 0
+      m_UnmaskedControls:
+      - m_SelectorMode: 5
+        m_SelectorMatchType: 0
+        m_GUIContent:
+          m_Text: 
+          m_Image: {fileID: 0}
+          m_Tooltip: 
+          m_TextWithWhitespace: 
+        m_ControlName: 
+        m_PropertyPath: 
+        m_TargetType:
+          m_TypeName: 
+        m_GUIStyleName: 
+        m_ObjectReference:
+          m_SceneObjectReference:
+            m_SceneGuid: 
+            m_GameObjectGuid: 
+            m_SerializedComponentType:
+              m_TypeName: 
+            m_ComponentIndex: 0
+            m_AssetObject: {fileID: 0}
+            m_Prefab: {fileID: 0}
+          m_FutureObjectReference: {fileID: 0}
+        m_VisualElementClassName: unity-inspector-element--imgui
+        m_VisualElementName: Add a moving platform (Tutorial Page)Inspector
+        m_VisualElementTypeName: UnityEditor.UIElements.InspectorElement
+    - m_SelectorType: 1
+      m_ViewType:
+        m_TypeName: 
+      m_OpenAndFocus: 0
+      m_EditorWindowType:
+        m_TypeName: UnityEditor.ProjectBrowser, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      m_AlternateEditorWindowTypes:
+        m_Items: []
+      m_MaskType: 0
+      m_MaskSizeModifier: 0
+      m_UnmaskedControls:
+      - m_SelectorMode: 5
+        m_SelectorMatchType: 0
+        m_GUIContent:
+          m_Text: 
+          m_Image: {fileID: 0}
+          m_Tooltip: 
+          m_TextWithWhitespace: 
+        m_ControlName: 
+        m_PropertyPath: 
+        m_TargetType:
+          m_TypeName: 
+        m_GUIStyleName: 
+        m_ObjectReference:
+          m_SceneObjectReference:
+            m_SceneGuid: 
+            m_GameObjectGuid: 
+            m_SerializedComponentType:
+              m_TypeName: 
+            m_ComponentIndex: 0
+            m_AssetObject: {fileID: 0}
+            m_Prefab: {fileID: 0}
+          m_FutureObjectReference: {fileID: 0}
+        m_VisualElementClassName: unity-inspector-element--imgui
+        m_VisualElementName: Add a moving platform (Tutorial Page)Inspector
+        m_VisualElementTypeName: UnityEditor.UIElements.InspectorElement
+    - m_SelectorType: 0
+      m_ViewType:
+        m_TypeName: UnityEditor.Toolbar, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      m_OpenAndFocus: 0
+      m_EditorWindowType:
+        m_TypeName: UnityEditor.ProjectBrowser, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      m_AlternateEditorWindowTypes:
+        m_Items: []
+      m_MaskType: 0
+      m_MaskSizeModifier: 0
+      m_UnmaskedControls:
+      - m_SelectorMode: 5
+        m_SelectorMatchType: 0
+        m_GUIContent:
+          m_Text: 
+          m_Image: {fileID: 0}
+          m_Tooltip: 
+          m_TextWithWhitespace: 
+        m_ControlName: 
+        m_PropertyPath: 
+        m_TargetType:
+          m_TypeName: 
+        m_GUIStyleName: 
+        m_ObjectReference:
+          m_SceneObjectReference:
+            m_SceneGuid: 
+            m_GameObjectGuid: 
+            m_SerializedComponentType:
+              m_TypeName: 
+            m_ComponentIndex: 0
+            m_AssetObject: {fileID: 0}
+            m_Prefab: {fileID: 0}
+          m_FutureObjectReference: {fileID: 0}
+        m_VisualElementClassName: 
+        m_VisualElementName: Play
+        m_VisualElementTypeName: 
+    MaskPreset: {fileID: 0}
+  Media:
+    m_ContentType: 1
+    m_Image: {fileID: 0}
+    m_VideoClip: {fileID: 32900000, guid: 2f7611745fcef9d4796eb6a657aebce6, type: 3}
+    m_Url: 
+    m_AutoStart: 0
+    m_Loop: 0
+--- !u!114 &-7877520470474062766
+>>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -215,6 +475,7 @@ MonoBehaviour:
   Title:
     m_Untranslated: INSTRUCTIONS
   Text:
+<<<<<<< HEAD
     m_Untranslated: '<b>1</b>.  In the <b>Project</b> window, open the <b>Assets</b> > <b>Prefabs</b> folder.
 
 
@@ -229,6 +490,22 @@ MonoBehaviour:
   m_Criteria:
     m_Items: []
 --- !u!114 &-7643393493271524421
+=======
+    m_Untranslated: '<b >1</b>.  In the <b >Project</b> window, open the <b >Assets</b> > <b>UI</b> folder.
+
+
+      <b>2</b>.  Click and drag the Remaining_Collectibles_UI asset into the <b>Hierarchy</b> window.
+
+
+      <b>Note</b>: You won''t notice anything change in the <b>Scene</b> view.
+
+
+      <b>3</b>.  Enter Play mode and check out the UI you just added.'
+  m_CriteriaCompletion: 0
+  m_Criteria:
+    m_Items: []
+--- !u!114 &-7611016711531804446
+>>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -238,6 +515,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ff771ccdf4150419d9ff4d342b069aae, type: 3}
+<<<<<<< HEAD
   m_Name: 11_Reach_the_final_star
   m_EditorClassIdentifier: 
   <IndexInTutorial>k__BackingField: 11
@@ -249,13 +527,31 @@ MonoBehaviour:
   - {fileID: 1843478717634321219}
   - {fileID: -6228440460811680673}
   - {fileID: 1097593956057250645}
+=======
+  m_Name: 8_Add_a_visual_effect
+  m_EditorClassIdentifier: 
+  <IndexInTutorial>k__BackingField: 8
+  Title:
+    m_Untranslated: Add a visual effect
+  m_LegacyParagraphs:
+    m_Items: []
+  m_PageParagraphs:
+  - {fileID: -1031529970571963978}
+  - {fileID: 5775020821742613987}
+>>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
   m_CameraSettings:
     m_CameraMode: 1
     m_FocusMode: 0
     m_Orthographic: 0
+<<<<<<< HEAD
     m_Size: 10
     m_Pivot: {x: 16.33, y: 6, z: 4.07}
     m_Rotation: {x: -0.074951805, y: -0.9129886, z: 0.19538344, w: -0.35023704}
+=======
+    m_Size: 10.577178
+    m_Pivot: {x: -13.792677, y: 7.8533344, z: 1.7831326}
+    m_Rotation: {x: 0.13191591, y: 0.8255909, z: -0.21593761, w: 0.5043547}
+>>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
     m_FrameObject:
       m_SceneGuid: 
       m_GameObjectGuid: 
@@ -274,6 +570,7 @@ MonoBehaviour:
   m_AutoAdvance: 0
   Showing:
     m_PersistentCalls:
+<<<<<<< HEAD
       m_Calls:
       - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: TutorialCallbacks, Assembly-CSharp-Editor
@@ -299,6 +596,9 @@ MonoBehaviour:
           m_StringArgument: Cube_Spawn_Point_2
           m_BoolArgument: 0
         m_CallState: 1
+=======
+      m_Calls: []
+>>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
   Shown:
     m_PersistentCalls:
       m_Calls: []
@@ -328,15 +628,22 @@ MonoBehaviour:
       m_Calls: []
   m_NextButton: Next
   m_DoneButton: Done
+<<<<<<< HEAD
 --- !u!114 &-7340527080136388316
 MonoBehaviour:
   m_ObjectHideFlags: 0
+=======
+--- !u!114 &-6044508630809371802
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+>>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< HEAD
   m_Script: {fileID: 11500000, guid: ff771ccdf4150419d9ff4d342b069aae, type: 3}
   m_Name: 2_Add_a_moving_platform
   m_EditorClassIdentifier: 
@@ -417,6 +724,23 @@ MonoBehaviour:
   m_NextButton: Next
   m_DoneButton: Done
 --- !u!114 &-7277000567180980492
+=======
+  m_Script: {fileID: 11500000, guid: d5b43af98cf241a48618341008f648cb, type: 3}
+  m_Name: MediaParagraph
+  m_EditorClassIdentifier: Unity.Tutorials.Editor::Unity.Tutorials.Editor.Paragraphs.MediaParagraph
+  m_MaskingSettings:
+    m_MaskingEnabled: 1
+    m_UnmaskedViews: []
+    MaskPreset: {fileID: 0}
+  Media:
+    m_ContentType: 0
+    m_Image: {fileID: 2800000, guid: f4083ed73845543f9ae16a30d06ffa1c, type: 3}
+    m_VideoClip: {fileID: 0}
+    m_Url: 
+    m_AutoStart: 1
+    m_Loop: 1
+--- !u!114 &-4537500171695620103
+>>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -433,8 +757,13 @@ MonoBehaviour:
     m_UnmaskedViews: []
     MaskPreset: {fileID: 0}
   Text:
+<<<<<<< HEAD
     m_Untranslated: "You\u2019ve probably already noticed the shadows and reflections that come from the simulated sun, controlled by the <b>Directional Light</b> GameObject.\n\nUnity has many tools for simulating light and lighting effects. \n\nYou can now access the secret room, but it\u2019s quite dark inside. Let\u2019s add some lights to make the star stand out more."
 --- !u!114 &-7147614645789736814
+=======
+    m_Untranslated: "Congratulations! You just completed your first game in Unity. \n\nIn the next optional tutorial, you'll learn how to upload your project to <b>Unity Play</b> so that you can experience it in a web browser.  \n\nAfter you upload your game, you can choose to make it private, only viewable with a link, or publicly available.\n\nThis way, you can easily share your Unity creations with friends, family, and the wider Unity community. Sharing your game is a fun way to showcase your creativity and also get feedback from others."
+--- !u!114 &-2698349093469156022
+>>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -444,6 +773,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ff771ccdf4150419d9ff4d342b069aae, type: 3}
+<<<<<<< HEAD
   m_Name: 9_User_interface
   m_EditorClassIdentifier: 
   <IndexInTutorial>k__BackingField: 9
@@ -454,6 +784,143 @@ MonoBehaviour:
   m_PageParagraphs:
   - {fileID: -2578288533992805436}
   - {fileID: -2650645626495244741}
+=======
+  m_Name: 4_Add_some_lights
+  m_EditorClassIdentifier: 
+  <IndexInTutorial>k__BackingField: 4
+  Title:
+    m_Untranslated: Add some lights
+  m_LegacyParagraphs:
+    m_Items: []
+  m_PageParagraphs:
+  - {fileID: 20711809017583733}
+  - {fileID: 1630065680089002482}
+  m_CameraSettings:
+    m_CameraMode: 1
+    m_FocusMode: 0
+    m_Orthographic: 0
+    m_Size: 16.30306
+    m_Pivot: {x: -5.71581, y: 8.836425, z: -42.18289}
+    m_Rotation: {x: 0.0047733304, y: 0.99351424, z: -0.045558423, w: 0.10409862}
+    m_FrameObject:
+      m_SceneGuid: 
+      m_GameObjectGuid: 
+      m_SerializedComponentType:
+        m_TypeName: 
+      m_ComponentIndex: 0
+      m_AssetObject: {fileID: 0}
+      m_Prefab: {fileID: 0}
+    m_Enabled: 1
+  NextButton:
+    m_Untranslated: Next
+  DoneButton:
+    m_Untranslated: Done
+  m_CompletedSound: {fileID: 0}
+  m_FaqEntries: []
+  m_AutoAdvance: 0
+  Showing:
+    m_PersistentCalls:
+      m_Calls: []
+  Shown:
+    m_PersistentCalls:
+      m_Calls: []
+  Staying:
+    m_PersistentCalls:
+      m_Calls: []
+  CriteriaValidated:
+    m_PersistentCalls:
+      m_Calls: []
+  MaskingSettingsChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  NonMaskingSettingsChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnBeforePageShown:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnAfterPageShown:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnTutorialPageStay:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnBeforeTutorialQuit:
+    m_PersistentCalls:
+      m_Calls: []
+  m_NextButton: Next
+  m_DoneButton: Done
+--- !u!114 &-2438657287940108433
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5b43af98cf241a48618341008f648cb, type: 3}
+  m_Name: MediaParagraph
+  m_EditorClassIdentifier: Unity.Tutorials.Editor::Unity.Tutorials.Editor.Paragraphs.MediaParagraph
+  m_MaskingSettings:
+    m_MaskingEnabled: 1
+    m_UnmaskedViews: []
+    MaskPreset: {fileID: 0}
+  Media:
+    m_ContentType: 0
+    m_Image: {fileID: 2800000, guid: 4f33d39dfb72948ef971f0ac2226556d, type: 3}
+    m_VideoClip: {fileID: 0}
+    m_Url: 
+    m_AutoStart: 1
+    m_Loop: 1
+--- !u!114 &-2425548960982189785
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 935228c0fd2628c4db5028980babef0b, type: 3}
+  m_Name: NarrativeParagraph
+  m_EditorClassIdentifier: Unity.Tutorials.Editor::Unity.Tutorials.Editor.Paragraphs.NarrativeParagraph
+  m_MaskingSettings:
+    m_MaskingEnabled: 0
+    m_UnmaskedViews: []
+    MaskPreset: {fileID: 0}
+  Text:
+    m_Untranslated: 'Audio adds so much richness to a game experience!
+
+
+      You''ll no doubt have noticed that the robot makes audible footsteps when it moves.
+
+
+      The robot also has an <b>audio listener</b> attached to it, which works like ears. The audio listener makes it possible to experience <b>spatial audio</b>, where sounds come from particular sources in the scene.
+
+
+      To really add a distinct feel to the scene, let''s add some background sound.'
+--- !u!114 &-2277576839153140420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff771ccdf4150419d9ff4d342b069aae, type: 3}
+  m_Name: 3_Lighting
+  m_EditorClassIdentifier: 
+  <IndexInTutorial>k__BackingField: 3
+  Title:
+    m_Untranslated: Lighting
+  m_LegacyParagraphs:
+    m_Items: []
+  m_PageParagraphs:
+  - {fileID: 1818453852681268177}
+  - {fileID: 6412708671329245784}
+>>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
   m_CameraSettings:
     m_CameraMode: 0
     m_FocusMode: 0
@@ -509,7 +976,109 @@ MonoBehaviour:
       m_Calls: []
   m_NextButton: Next
   m_DoneButton: Done
+<<<<<<< HEAD
 --- !u!114 &-6964190681431996317
+=======
+--- !u!114 &-1958626518601588620
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5b43af98cf241a48618341008f648cb, type: 3}
+  m_Name: MediaParagraph
+  m_EditorClassIdentifier: Unity.Tutorials.Editor::Unity.Tutorials.Editor.Paragraphs.MediaParagraph
+  m_MaskingSettings:
+    m_MaskingEnabled: 1
+    m_UnmaskedViews: []
+    MaskPreset: {fileID: 0}
+  Media:
+    m_ContentType: 0
+    m_Image: {fileID: 2800000, guid: 22e1a2d73ebad46f9bcc8ebd73bbd147, type: 3}
+    m_VideoClip: {fileID: 0}
+    m_Url: 
+    m_AutoStart: 1
+    m_Loop: 1
+--- !u!114 &-1506410732020158439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff771ccdf4150419d9ff4d342b069aae, type: 3}
+  m_Name: 9_User_interface
+  m_EditorClassIdentifier: 
+  <IndexInTutorial>k__BackingField: 9
+  Title:
+    m_Untranslated: User interface
+  m_LegacyParagraphs:
+    m_Items: []
+  m_PageParagraphs:
+  - {fileID: -2438657287940108433}
+  - {fileID: 4371660557131795361}
+  m_CameraSettings:
+    m_CameraMode: 0
+    m_FocusMode: 0
+    m_Orthographic: 0
+    m_Size: 0
+    m_Pivot: {x: 0, y: 0, z: 0}
+    m_Rotation: {x: 0, y: 0, z: 0, w: 0}
+    m_FrameObject:
+      m_SceneGuid: 
+      m_GameObjectGuid: 
+      m_SerializedComponentType:
+        m_TypeName: 
+      m_ComponentIndex: 0
+      m_AssetObject: {fileID: 0}
+      m_Prefab: {fileID: 0}
+    m_Enabled: 0
+  NextButton:
+    m_Untranslated: Next
+  DoneButton:
+    m_Untranslated: Done
+  m_CompletedSound: {fileID: 0}
+  m_FaqEntries: []
+  m_AutoAdvance: 0
+  Showing:
+    m_PersistentCalls:
+      m_Calls: []
+  Shown:
+    m_PersistentCalls:
+      m_Calls: []
+  Staying:
+    m_PersistentCalls:
+      m_Calls: []
+  CriteriaValidated:
+    m_PersistentCalls:
+      m_Calls: []
+  MaskingSettingsChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  NonMaskingSettingsChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnBeforePageShown:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnAfterPageShown:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnTutorialPageStay:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnBeforeTutorialQuit:
+    m_PersistentCalls:
+      m_Calls: []
+  m_NextButton: Next
+  m_DoneButton: Done
+--- !u!114 &-1031529970571963978
+>>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -623,7 +1192,11 @@ MonoBehaviour:
     m_Url: 
     m_AutoStart: 0
     m_Loop: 0
+<<<<<<< HEAD
 --- !u!114 &-6920732594044714759
+=======
+--- !u!114 &-776943370176351955
+>>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -640,6 +1213,7 @@ MonoBehaviour:
     m_UnmaskedViews: []
     MaskPreset: {fileID: 0}
   Text:
+<<<<<<< HEAD
     m_Untranslated: "Animation is a key component of bringing a scene to life. Characters can have animations, like walking, running, or jumping. \n\nObjects in the scene can also be animated, like a tree swaying in the wind or a ball bouncing up and down.\n\nGameObjects can be animated using Unity's animation tools, or animations can be imported from other applications.\n"
 --- !u!114 &-6303927755636901093
 MonoBehaviour:
@@ -906,6 +1480,10 @@ MonoBehaviour:
     m_AutoStart: 1
     m_Loop: 1
 --- !u!114 &-2327040538922465090
+=======
+    m_Untranslated: "Visual effects (VFX) are simulated motion effects added to enhance a scene, ranging from a subtle splash of water to a massive fiery explosion.\n\nUnity has tools to create visual effects and particles that can simulate fire, gas, rain, snow, and many other phenomena. \n\nWe've prepared some ready-to-use visual effects for your scene. \n\nAdd them to your scene for dramatic effect!\n"
+--- !u!114 &-723106501674761694
+>>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1008,15 +1586,22 @@ MonoBehaviour:
     m_Url: 
     m_AutoStart: 0
     m_Loop: 0
+<<<<<<< HEAD
 --- !u!114 &-2046205848931109066
 MonoBehaviour:
   m_ObjectHideFlags: 1
+=======
+--- !u!114 &-342734854561133413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+>>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< HEAD
   m_Script: {fileID: 11500000, guid: 456c7c2b477e4253b9e4faf9ed4b18a9, type: 3}
   m_Name: InstructionsParagraph
   m_EditorClassIdentifier: Unity.Tutorials.Editor::Unity.Tutorials.Editor.Paragraphs.InstructionsParagraph
@@ -1100,156 +1685,18 @@ MonoBehaviour:
   m_CriteriaCompletion: 0
   m_Criteria:
     m_Items: []
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f107dc6d4c984c45bdafd3bb15f98f0, type: 3}
-  m_Name: t3_Game time_ Explore the possibilities
-  m_EditorClassIdentifier: 
-  m_Version: 1
-  TutorialTitle:
-    m_Untranslated: Explore the possibilities
-  m_LessonId: 9c776b80-6c96-4ec1-801c-f77ac9ac63ab
-  m_Pages:
-    m_Items:
-    - {fileID: 7163235489118250357}
-    - {fileID: 8488492439089707508}
-    - {fileID: -7340527080136388316}
-    - {fileID: 859400857960880624}
-    - {fileID: -5594075196840406814}
-    - {fileID: -8612261561486648624}
-    - {fileID: -6303927755636901093}
-    - {fileID: -8417422138957904143}
-    - {fileID: 3700263864367323720}
-    - {fileID: -7147614645789736814}
-    - {fileID: 3126250870772659679}
-    - {fileID: -7643393493271524421}
-    - {fileID: 8196460939183305400}
-  m_SceneManagementBehavior: 1
-  m_ReturnToPreviousScenes: 0
-  m_Scenes: []
-  m_DefaultSceneCameraSettings:
-    m_CameraMode: 0
-    m_FocusMode: 0
-    m_Orthographic: 0
-    m_Size: 0
-    m_Pivot: {x: 0, y: 0, z: 0}
-    m_Rotation: {x: 0, y: 0, z: 0, w: 0}
-    m_FrameObject:
-      m_SceneGuid: 
-      m_GameObjectGuid: 
-      m_SerializedComponentType:
-        m_TypeName: 
-      m_ComponentIndex: 0
-      m_AssetObject: {fileID: 0}
-      m_Prefab: {fileID: 0}
-    m_Enabled: 0
-  m_ProgressTrackingEnabled: 1
-  m_WindowLayout: {fileID: 0}
-  CompletionDialog: {fileID: 0}
-  Initiated:
-    m_PersistentCalls:
-      m_Calls: []
-  PageInitiated:
-    m_PersistentCalls:
-      m_Calls: []
-  GoingBack:
-    m_PersistentCalls:
-      m_Calls: []
-  Completed:
-    m_PersistentCalls:
-      m_Calls: []
-  Quit:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Scene: {fileID: 0}
-  m_TutorialTitle: 
-  m_FaqEntries: []
---- !u!114 &288935031537292037
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 935228c0fd2628c4db5028980babef0b, type: 3}
-  m_Name: NarrativeParagraph
-  m_EditorClassIdentifier: Unity.Tutorials.Editor::Unity.Tutorials.Editor.Paragraphs.NarrativeParagraph
-  m_MaskingSettings:
-    m_MaskingEnabled: 0
-    m_UnmaskedViews: []
-    MaskPreset: {fileID: 0}
-  Text:
-    m_Untranslated: 'Audio adds so much richness to a game experience!
-
-
-      You''ll no doubt have noticed that the robot makes audible footsteps when it moves.
-
-
-      The robot also has an <b>audio listener</b> attached to it, which works like ears. The audio listener makes it possible to experience <b>spatial audio</b>, where sounds come from particular sources in the scene.
-
-
-      To really add a distinct feel to the scene, let''s add some background sound.'
---- !u!114 &535455250891465363
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 456c7c2b477e4253b9e4faf9ed4b18a9, type: 3}
-  m_Name: InstructionsParagraph
-  m_EditorClassIdentifier: Unity.Tutorials.Editor::Unity.Tutorials.Editor.Paragraphs.InstructionsParagraph
-  m_MaskingSettings:
-    m_MaskingEnabled: 0
-    m_UnmaskedViews: []
-    MaskPreset: {fileID: 0}
-  Title:
-    m_Untranslated: INSTRUCTIONS
-  Text:
-    m_Untranslated: '<b >1</b>.  In the <b >Project</b> window, open the <b >Assets</b> > <b>UI</b> folder.
-
-
-      <b>2</b>.  Click and drag the Remaining_Collectibles_UI asset into the <b>Hierarchy</b> window.
-
-
-      <b>Note</b>: You won''t notice anything change in the <b>Scene</b> view.
-
-
-      <b>3</b>.  Enter Play mode and check out the UI you just added.'
-  m_CriteriaCompletion: 0
-  m_Criteria:
-    m_Items: []
---- !u!114 &859400857960880624
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
+=======
   m_Script: {fileID: 11500000, guid: ff771ccdf4150419d9ff4d342b069aae, type: 3}
-  m_Name: 3_Lighting
+  m_Name: 0_Explore_the_possibilities
   m_EditorClassIdentifier: 
-  <IndexInTutorial>k__BackingField: 3
+  <IndexInTutorial>k__BackingField: 0
   Title:
-    m_Untranslated: Lighting
+    m_Untranslated: Explore the possibilities
   m_LegacyParagraphs:
     m_Items: []
   m_PageParagraphs:
-  - {fileID: -8315897325323377817}
-  - {fileID: -7277000567180980492}
+  - {fileID: 4175612031011498441}
+  - {fileID: 4940679423686917994}
   m_CameraSettings:
     m_CameraMode: 0
     m_FocusMode: 0
@@ -1305,7 +1752,213 @@ MonoBehaviour:
       m_Calls: []
   m_NextButton: Next
   m_DoneButton: Done
---- !u!114 &1097593956057250645
+>>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f107dc6d4c984c45bdafd3bb15f98f0, type: 3}
+  m_Name: t3_Game time_ Explore the possibilities
+  m_EditorClassIdentifier: 
+  m_Version: 1
+  TutorialTitle:
+    m_Untranslated: Explore the possibilities
+  m_LessonId: 9c776b80-6c96-4ec1-801c-f77ac9ac63ab
+  m_Pages:
+    m_Items:
+<<<<<<< HEAD
+    - {fileID: 7163235489118250357}
+    - {fileID: 8488492439089707508}
+    - {fileID: -7340527080136388316}
+    - {fileID: 859400857960880624}
+    - {fileID: -5594075196840406814}
+    - {fileID: -8612261561486648624}
+    - {fileID: -6303927755636901093}
+    - {fileID: -8417422138957904143}
+    - {fileID: 3700263864367323720}
+    - {fileID: -7147614645789736814}
+    - {fileID: 3126250870772659679}
+    - {fileID: -7643393493271524421}
+    - {fileID: 8196460939183305400}
+=======
+    - {fileID: -342734854561133413}
+    - {fileID: -8420916506891149990}
+    - {fileID: 7258069160311065159}
+    - {fileID: -2277576839153140420}
+    - {fileID: -2698349093469156022}
+    - {fileID: 5120678423910416193}
+    - {fileID: 8363453379071893818}
+    - {fileID: 3919504907211355656}
+    - {fileID: -7611016711531804446}
+    - {fileID: -1506410732020158439}
+    - {fileID: 6698828620995645863}
+    - {fileID: 904809680863418540}
+    - {fileID: 8277151568432406543}
+>>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
+  m_SceneManagementBehavior: 1
+  m_ReturnToPreviousScenes: 0
+  m_Scenes: []
+  m_DefaultSceneCameraSettings:
+    m_CameraMode: 0
+    m_FocusMode: 0
+    m_Orthographic: 0
+    m_Size: 0
+    m_Pivot: {x: 0, y: 0, z: 0}
+    m_Rotation: {x: 0, y: 0, z: 0, w: 0}
+    m_FrameObject:
+      m_SceneGuid: 
+      m_GameObjectGuid: 
+      m_SerializedComponentType:
+        m_TypeName: 
+      m_ComponentIndex: 0
+      m_AssetObject: {fileID: 0}
+      m_Prefab: {fileID: 0}
+    m_Enabled: 0
+  m_ProgressTrackingEnabled: 1
+  m_WindowLayout: {fileID: 0}
+  CompletionDialog: {fileID: 0}
+  Initiated:
+    m_PersistentCalls:
+      m_Calls: []
+  PageInitiated:
+    m_PersistentCalls:
+      m_Calls: []
+  GoingBack:
+    m_PersistentCalls:
+      m_Calls: []
+  Completed:
+    m_PersistentCalls:
+      m_Calls: []
+  Quit:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Scene: {fileID: 0}
+  m_TutorialTitle: 
+  m_FaqEntries: []
+<<<<<<< HEAD
+--- !u!114 &288935031537292037
+=======
+--- !u!114 &20711809017583733
+>>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+<<<<<<< HEAD
+  m_Script: {fileID: 11500000, guid: 935228c0fd2628c4db5028980babef0b, type: 3}
+  m_Name: NarrativeParagraph
+  m_EditorClassIdentifier: Unity.Tutorials.Editor::Unity.Tutorials.Editor.Paragraphs.NarrativeParagraph
+  m_MaskingSettings:
+    m_MaskingEnabled: 0
+    m_UnmaskedViews: []
+    MaskPreset: {fileID: 0}
+  Text:
+    m_Untranslated: 'Audio adds so much richness to a game experience!
+
+
+      You''ll no doubt have noticed that the robot makes audible footsteps when it moves.
+
+
+      The robot also has an <b>audio listener</b> attached to it, which works like ears. The audio listener makes it possible to experience <b>spatial audio</b>, where sounds come from particular sources in the scene.
+
+
+      To really add a distinct feel to the scene, let''s add some background sound.'
+--- !u!114 &535455250891465363
+=======
+  m_Script: {fileID: 11500000, guid: d5b43af98cf241a48618341008f648cb, type: 3}
+  m_Name: MediaParagraph
+  m_EditorClassIdentifier: Unity.Tutorials.Editor::Unity.Tutorials.Editor.Paragraphs.MediaParagraph
+  m_MaskingSettings:
+    m_MaskingEnabled: 1
+    m_UnmaskedViews:
+    - m_SelectorType: 1
+      m_ViewType:
+        m_TypeName: 
+      m_OpenAndFocus: 0
+      m_EditorWindowType:
+        m_TypeName: UnityEditor.ProjectBrowser, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      m_AlternateEditorWindowTypes:
+        m_Items: []
+      m_MaskType: 0
+      m_MaskSizeModifier: 0
+      m_UnmaskedControls: []
+    - m_SelectorType: 1
+      m_ViewType:
+        m_TypeName: 
+      m_OpenAndFocus: 0
+      m_EditorWindowType:
+        m_TypeName: UnityEditor.SceneView, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      m_AlternateEditorWindowTypes:
+        m_Items: []
+      m_MaskType: 0
+      m_MaskSizeModifier: 0
+      m_UnmaskedControls: []
+    - m_SelectorType: 1
+      m_ViewType:
+        m_TypeName: 
+      m_OpenAndFocus: 0
+      m_EditorWindowType:
+        m_TypeName: UnityEditor.GameView, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      m_AlternateEditorWindowTypes:
+        m_Items: []
+      m_MaskType: 0
+      m_MaskSizeModifier: 0
+      m_UnmaskedControls: []
+    - m_SelectorType: 0
+      m_ViewType:
+        m_TypeName: UnityEditor.Toolbar, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      m_OpenAndFocus: 0
+      m_EditorWindowType:
+        m_TypeName: UnityEditor.GameView, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      m_AlternateEditorWindowTypes:
+        m_Items: []
+      m_MaskType: 0
+      m_MaskSizeModifier: 0
+      m_UnmaskedControls:
+      - m_SelectorMode: 5
+        m_SelectorMatchType: 0
+        m_GUIContent:
+          m_Text: 
+          m_Image: {fileID: 0}
+          m_Tooltip: 
+          m_TextWithWhitespace: 
+        m_ControlName: 
+        m_PropertyPath: 
+        m_TargetType:
+          m_TypeName: 
+        m_GUIStyleName: 
+        m_ObjectReference:
+          m_SceneObjectReference:
+            m_SceneGuid: 
+            m_GameObjectGuid: 
+            m_SerializedComponentType:
+              m_TypeName: 
+            m_ComponentIndex: 0
+            m_AssetObject: {fileID: 0}
+            m_Prefab: {fileID: 0}
+          m_FutureObjectReference: {fileID: 0}
+        m_VisualElementClassName: 
+        m_VisualElementName: Play
+        m_VisualElementTypeName: 
+    MaskPreset: {fileID: 0}
+  Media:
+    m_ContentType: 1
+    m_Image: {fileID: 0}
+    m_VideoClip: {fileID: 32900000, guid: e7ea45c29f383864db4faa04ed5f209f, type: 3}
+    m_Url: 
+    m_AutoStart: 0
+    m_Loop: 0
+--- !u!114 &667454810723026185
+>>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1324,11 +1977,200 @@ MonoBehaviour:
   Title:
     m_Untranslated: INSTRUCTIONS
   Text:
+<<<<<<< HEAD
+    m_Untranslated: '<b >1</b>.  In the <b >Project</b> window, open the <b >Assets</b> > <b>UI</b> folder.
+
+
+      <b>2</b>.  Click and drag the Remaining_Collectibles_UI asset into the <b>Hierarchy</b> window.
+
+
+      <b>Note</b>: You won''t notice anything change in the <b>Scene</b> view.
+
+
+      <b>3</b>.  Enter Play mode and check out the UI you just added.'
+  m_CriteriaCompletion: 0
+  m_Criteria:
+    m_Items: []
+--- !u!114 &859400857960880624
+=======
+    m_Untranslated: '<b>1</b>.  In the <b>Project</b> window, open the <b>Assets</b> > <b>Audio</b> folder.
+
+
+      <b>2</b>.  Click and drag any of the Audio assets into the <b>Hierarchy</b> window.
+
+
+      <b>3</b>.  Enter Play mode and listen to the audio you just added.
+
+
+      <b>Note</b>: If you don''t like the audio, you can delete it from the <b>Hierarchy</b> window by right clicking it and selecting <b>Delete</b>, then drag in a different audio option.'
+  m_CriteriaCompletion: 0
+  m_Criteria:
+    m_Items: []
+--- !u!114 &904809680863418540
+>>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff771ccdf4150419d9ff4d342b069aae, type: 3}
+<<<<<<< HEAD
+  m_Name: 3_Lighting
+  m_EditorClassIdentifier: 
+  <IndexInTutorial>k__BackingField: 3
+  Title:
+    m_Untranslated: Lighting
+  m_LegacyParagraphs:
+    m_Items: []
+  m_PageParagraphs:
+  - {fileID: -8315897325323377817}
+  - {fileID: -7277000567180980492}
+  m_CameraSettings:
+    m_CameraMode: 0
+    m_FocusMode: 0
+    m_Orthographic: 0
+    m_Size: 0
+    m_Pivot: {x: 0, y: 0, z: 0}
+    m_Rotation: {x: 0, y: 0, z: 0, w: 0}
+=======
+  m_Name: 11_Reach_the_final_star
+  m_EditorClassIdentifier: 
+  <IndexInTutorial>k__BackingField: 11
+  Title:
+    m_Untranslated: Reach the final star
+  m_LegacyParagraphs:
+    m_Items: []
+  m_PageParagraphs:
+  - {fileID: 2606959125221268621}
+  - {fileID: 9213903173752939384}
+  - {fileID: 9161236134362927576}
+  m_CameraSettings:
+    m_CameraMode: 1
+    m_FocusMode: 0
+    m_Orthographic: 0
+    m_Size: 10
+    m_Pivot: {x: 16.33, y: 6, z: 4.07}
+    m_Rotation: {x: -0.074951805, y: -0.9129886, z: 0.19538344, w: -0.35023704}
+>>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
+    m_FrameObject:
+      m_SceneGuid: 
+      m_GameObjectGuid: 
+      m_SerializedComponentType:
+        m_TypeName: 
+      m_ComponentIndex: 0
+      m_AssetObject: {fileID: 0}
+      m_Prefab: {fileID: 0}
+<<<<<<< HEAD
+    m_Enabled: 0
+=======
+    m_Enabled: 1
+>>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
+  NextButton:
+    m_Untranslated: Next
+  DoneButton:
+    m_Untranslated: Done
+  m_CompletedSound: {fileID: 0}
+  m_FaqEntries: []
+  m_AutoAdvance: 0
+  Showing:
+    m_PersistentCalls:
+<<<<<<< HEAD
+      m_Calls: []
+=======
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: TutorialCallbacks, Assembly-CSharp-Editor
+        m_MethodName: EnableChildObjects
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Hidden_Area_3
+          m_BoolArgument: 0
+        m_CallState: 1
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: TutorialCallbacks, Assembly-CSharp-Editor
+        m_MethodName: FrameObjectWithTag
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Cube_Spawn_Point_2
+          m_BoolArgument: 0
+        m_CallState: 1
+>>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
+  Shown:
+    m_PersistentCalls:
+      m_Calls: []
+  Staying:
+    m_PersistentCalls:
+      m_Calls: []
+  CriteriaValidated:
+    m_PersistentCalls:
+      m_Calls: []
+  MaskingSettingsChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  NonMaskingSettingsChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnBeforePageShown:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnAfterPageShown:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnTutorialPageStay:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnBeforeTutorialQuit:
+    m_PersistentCalls:
+      m_Calls: []
+  m_NextButton: Next
+  m_DoneButton: Done
+<<<<<<< HEAD
+--- !u!114 &1097593956057250645
+=======
+--- !u!114 &1630065680089002482
+>>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 456c7c2b477e4253b9e4faf9ed4b18a9, type: 3}
+  m_Name: InstructionsParagraph
+  m_EditorClassIdentifier: Unity.Tutorials.Editor::Unity.Tutorials.Editor.Paragraphs.InstructionsParagraph
+  m_MaskingSettings:
+    m_MaskingEnabled: 0
+    m_UnmaskedViews: []
+    MaskPreset: {fileID: 0}
+  Title:
+    m_Untranslated: INSTRUCTIONS
+  Text:
+<<<<<<< HEAD
     m_Untranslated: "<b>1</b>.  Select the <b>Add (+)</b> button in the upper-left corner of the <b>Hierarchy</b> window, then select <b>3D Object</b> > <b>Cube</b>.\n\n<b>2</b>.  With the <b>Scale</b> tool, turn the cube into a platform the robot can stand on.\n\n<b>3</b>.  Add a material to the <b>Cube</b> GameObject (<b>Assets</b> > <b>Materials</b>).\n\n<b>4</b>.  In the <b>Hierarchy</b> window, right click the <b>Cube (1)</b> GameObject and select <b>Duplicate</b> or press <b>Ctrl</b>+<b>D</b> (macOS: <b>Cmd</b>+<b>D</b>). \n\n<b>5</b>.  Select the newly created duplicate GameObject and use the <b>Move</b> tool to position it up and towards the star.\n\n<b>6</b>.  Repeat steps 4 and 5 until you think you've created a set of stairs the robot can use to reach the star.\n\n<b>7</b>.  Enter Play mode and test your design.\n\n<b>Note</b>: You might need to experiment to get the position of these platforms just right. Game designers iterate many times on their designs; they change things, then test, then change more, and then test more. This process is called <b>level design,</b> a fundamental part of game development."
   m_CriteriaCompletion: 0
   m_Criteria:
     m_Items: []
 --- !u!114 &1361483735765951509
+=======
+    m_Untranslated: "<b>1</b>.  In the <b>Project</b> window, open the <b>Assets</b> > <b>Prefabs</b> folder.\n\n<b>2</b>.  Click and drag the Wall_Light_Left and Wall_Light_Right prefabs onto the left and right walls of the secret area, respectively. \n\n<b>3</b>.  Enter Play mode and have the robot enter the secret room to see how the new lights alter the space. "
+  m_CriteriaCompletion: 0
+  m_Criteria:
+    m_Items: []
+--- !u!114 &1818453852681268177
+>>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1346,12 +2188,20 @@ MonoBehaviour:
     MaskPreset: {fileID: 0}
   Media:
     m_ContentType: 0
+<<<<<<< HEAD
     m_Image: {fileID: 2800000, guid: f4083ed73845543f9ae16a30d06ffa1c, type: 3}
+=======
+    m_Image: {fileID: 2800000, guid: 936edc3cb64b6467b8f80ba720661c69, type: 3}
+>>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
     m_VideoClip: {fileID: 0}
     m_Url: 
     m_AutoStart: 1
     m_Loop: 1
+<<<<<<< HEAD
 --- !u!114 &1843478717634321219
+=======
+--- !u!114 &2606959125221268621
+>>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1454,7 +2304,200 @@ MonoBehaviour:
     m_Url: 
     m_AutoStart: 0
     m_Loop: 0
+<<<<<<< HEAD
 --- !u!114 &2902919645584805947
+=======
+--- !u!114 &3495099882479545373
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5b43af98cf241a48618341008f648cb, type: 3}
+  m_Name: MediaParagraph
+  m_EditorClassIdentifier: Unity.Tutorials.Editor::Unity.Tutorials.Editor.Paragraphs.MediaParagraph
+  m_MaskingSettings:
+    m_MaskingEnabled: 1
+    m_UnmaskedViews: []
+    MaskPreset: {fileID: 0}
+  Media:
+    m_ContentType: 0
+    m_Image: {fileID: 2800000, guid: 027bc0d9a0d0043bf8c45ffcca8543d6, type: 3}
+    m_VideoClip: {fileID: 0}
+    m_Url: 
+    m_AutoStart: 1
+    m_Loop: 1
+--- !u!114 &3919504907211355656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff771ccdf4150419d9ff4d342b069aae, type: 3}
+  m_Name: 7_Visual_effects
+  m_EditorClassIdentifier: 
+  <IndexInTutorial>k__BackingField: 7
+  Title:
+    m_Untranslated: Visual effects
+  m_LegacyParagraphs:
+    m_Items: []
+  m_PageParagraphs:
+  - {fileID: 8517551222966913683}
+  - {fileID: -776943370176351955}
+  m_CameraSettings:
+    m_CameraMode: 0
+    m_FocusMode: 0
+    m_Orthographic: 0
+    m_Size: 0
+    m_Pivot: {x: 0, y: 0, z: 0}
+    m_Rotation: {x: 0, y: 0, z: 0, w: 0}
+    m_FrameObject:
+      m_SceneGuid: 
+      m_GameObjectGuid: 
+      m_SerializedComponentType:
+        m_TypeName: 
+      m_ComponentIndex: 0
+      m_AssetObject: {fileID: 0}
+      m_Prefab: {fileID: 0}
+    m_Enabled: 0
+  NextButton:
+    m_Untranslated: Next
+  DoneButton:
+    m_Untranslated: Done
+  m_CompletedSound: {fileID: 0}
+  m_FaqEntries: []
+  m_AutoAdvance: 0
+  Showing:
+    m_PersistentCalls:
+      m_Calls: []
+  Shown:
+    m_PersistentCalls:
+      m_Calls: []
+  Staying:
+    m_PersistentCalls:
+      m_Calls: []
+  CriteriaValidated:
+    m_PersistentCalls:
+      m_Calls: []
+  MaskingSettingsChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  NonMaskingSettingsChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnBeforePageShown:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnAfterPageShown:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnTutorialPageStay:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnBeforeTutorialQuit:
+    m_PersistentCalls:
+      m_Calls: []
+  m_NextButton: Next
+  m_DoneButton: Done
+--- !u!114 &4175612031011498441
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5b43af98cf241a48618341008f648cb, type: 3}
+  m_Name: MediaParagraph
+  m_EditorClassIdentifier: Unity.Tutorials.Editor::Unity.Tutorials.Editor.Paragraphs.MediaParagraph
+  m_MaskingSettings:
+    m_MaskingEnabled: 1
+    m_UnmaskedViews: []
+    MaskPreset: {fileID: 0}
+  Media:
+    m_ContentType: 0
+    m_Image: {fileID: 2800000, guid: b1e1fa411612c374f981aac1173a3012, type: 3}
+    m_VideoClip: {fileID: 0}
+    m_Url: 
+    m_AutoStart: 1
+    m_Loop: 1
+--- !u!114 &4371660557131795361
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 935228c0fd2628c4db5028980babef0b, type: 3}
+  m_Name: NarrativeParagraph
+  m_EditorClassIdentifier: Unity.Tutorials.Editor::Unity.Tutorials.Editor.Paragraphs.NarrativeParagraph
+  m_MaskingSettings:
+    m_MaskingEnabled: 0
+    m_UnmaskedViews: []
+    MaskPreset: {fileID: 0}
+  Text:
+    m_Untranslated: "A user interface (UI) is a great tool for players. User interfaces can display all kinds of information and allow players to interact with your game through buttons, menus, inventories, heads up display overlays, and more. \n\nThere are a total of five stars in the scene. Let\u2019s add a simple UI that will allow you to see how many you\u2019ve collected and how many remain. \n"
+--- !u!114 &4519933869115746840
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 456c7c2b477e4253b9e4faf9ed4b18a9, type: 3}
+  m_Name: InstructionsParagraph
+  m_EditorClassIdentifier: Unity.Tutorials.Editor::Unity.Tutorials.Editor.Paragraphs.InstructionsParagraph
+  m_MaskingSettings:
+    m_MaskingEnabled: 0
+    m_UnmaskedViews: []
+    MaskPreset: {fileID: 0}
+  Title:
+    m_Untranslated: INSTRUCTIONS
+  Text:
+    m_Untranslated: '<b>1</b>.  In the <b>Project</b> window, open the <b>Assets</b> > <b>Prefabs</b> folder.
+
+
+      <b>2</b>.  Drag the Moving_Platform prefab into the scene and position it at the edge of the <b>Ground</b> GameObject.
+
+
+      <b>Note</b>: It doesn''t matter if the platform intersects with the <b>Ground</b> GameObejct.
+
+
+      <b>3</b>.  Enter Play mode and use the platform to collect the star. '
+  m_CriteriaCompletion: 0
+  m_Criteria:
+    m_Items: []
+--- !u!114 &4691215784292455810
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 935228c0fd2628c4db5028980babef0b, type: 3}
+  m_Name: NarrativeParagraph
+  m_EditorClassIdentifier: Unity.Tutorials.Editor::Unity.Tutorials.Editor.Paragraphs.NarrativeParagraph
+  m_MaskingSettings:
+    m_MaskingEnabled: 0
+    m_UnmaskedViews: []
+    MaskPreset: {fileID: 0}
+  Text:
+    m_Untranslated: A new GameObejct has appeared in the scene, and there's a star inside it! In order to reach this star, you'll have to create an animated elevator.
+--- !u!114 &4940679423686917994
+>>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1472,7 +2515,127 @@ MonoBehaviour:
     MaskPreset: {fileID: 0}
   Text:
     m_Untranslated: "You now have a basic working knowledge of how the Unity Editor works, but there's so much more to explore. \n\nIn this tutorial, you'll learn how to really polish an experience and achieve the look and feel you want."
+<<<<<<< HEAD
 --- !u!114 &3126250870772659679
+=======
+--- !u!114 &5120678423910416193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff771ccdf4150419d9ff4d342b069aae, type: 3}
+  m_Name: 5_Audio
+  m_EditorClassIdentifier: 
+  <IndexInTutorial>k__BackingField: 5
+  Title:
+    m_Untranslated: Audio
+  m_LegacyParagraphs:
+    m_Items: []
+  m_PageParagraphs:
+  - {fileID: -1958626518601588620}
+  - {fileID: -2425548960982189785}
+  m_CameraSettings:
+    m_CameraMode: 0
+    m_FocusMode: 0
+    m_Orthographic: 0
+    m_Size: 0
+    m_Pivot: {x: 0, y: 0, z: 0}
+    m_Rotation: {x: 0, y: 0, z: 0, w: 0}
+    m_FrameObject:
+      m_SceneGuid: 
+      m_GameObjectGuid: 
+      m_SerializedComponentType:
+        m_TypeName: 
+      m_ComponentIndex: 0
+      m_AssetObject: {fileID: 0}
+      m_Prefab: {fileID: 0}
+    m_Enabled: 0
+  NextButton:
+    m_Untranslated: Next
+  DoneButton:
+    m_Untranslated: Done
+  m_CompletedSound: {fileID: 0}
+  m_FaqEntries: []
+  m_AutoAdvance: 0
+  Showing:
+    m_PersistentCalls:
+      m_Calls: []
+  Shown:
+    m_PersistentCalls:
+      m_Calls: []
+  Staying:
+    m_PersistentCalls:
+      m_Calls: []
+  CriteriaValidated:
+    m_PersistentCalls:
+      m_Calls: []
+  MaskingSettingsChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  NonMaskingSettingsChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnBeforePageShown:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnAfterPageShown:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnTutorialPageStay:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnBeforeTutorialQuit:
+    m_PersistentCalls:
+      m_Calls: []
+  m_NextButton: Next
+  m_DoneButton: Done
+--- !u!114 &5775020821742613987
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 456c7c2b477e4253b9e4faf9ed4b18a9, type: 3}
+  m_Name: InstructionsParagraph
+  m_EditorClassIdentifier: Unity.Tutorials.Editor::Unity.Tutorials.Editor.Paragraphs.InstructionsParagraph
+  m_MaskingSettings:
+    m_MaskingEnabled: 0
+    m_UnmaskedViews: []
+    MaskPreset: {fileID: 0}
+  Title:
+    m_Untranslated: INSTRUCTIONS
+  Text:
+    m_Untranslated: "<b >1</b>.  In the <b >Project</b> window, open the <b >Assets</b> > <b>VFX</b> folder.\n\n<b>2</b>.  Click and drag any of the VFX assets onto the ground in the scene.\n\n<b>3</b>.  In the <b>Inspector</b> window, change the <b>Position</b> coordinates as follows:\n\nX = 0 | Y = 0 | Z = 0 \n\n<b>4</b>.  Enter Play mode and check out the visual effect you just added."
+  m_CriteriaCompletion: 0
+  m_Criteria:
+    m_Items: []
+--- !u!114 &6412708671329245784
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 935228c0fd2628c4db5028980babef0b, type: 3}
+  m_Name: NarrativeParagraph
+  m_EditorClassIdentifier: Unity.Tutorials.Editor::Unity.Tutorials.Editor.Paragraphs.NarrativeParagraph
+  m_MaskingSettings:
+    m_MaskingEnabled: 0
+    m_UnmaskedViews: []
+    MaskPreset: {fileID: 0}
+  Text:
+    m_Untranslated: "You\u2019ve probably already noticed the shadows and reflections that come from the simulated sun, controlled by the <b>Directional Light</b> GameObject.\n\nUnity has many tools for simulating light and lighting effects. \n\nYou can now access the secret room, but it\u2019s quite dark inside. Let\u2019s add some lights to make the star stand out more."
+--- !u!114 &6698828620995645863
+>>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1490,8 +2653,13 @@ MonoBehaviour:
   m_LegacyParagraphs:
     m_Items: []
   m_PageParagraphs:
+<<<<<<< HEAD
   - {fileID: -2327040538922465090}
   - {fileID: 535455250891465363}
+=======
+  - {fileID: -723106501674761694}
+  - {fileID: -7877520470474062766}
+>>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
   m_CameraSettings:
     m_CameraMode: 1
     m_FocusMode: 0
@@ -1547,7 +2715,11 @@ MonoBehaviour:
       m_Calls: []
   m_NextButton: Next
   m_DoneButton: Done
+<<<<<<< HEAD
 --- !u!114 &3700263864367323720
+=======
+--- !u!114 &7258069160311065159
+>>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1557,6 +2729,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ff771ccdf4150419d9ff4d342b069aae, type: 3}
+<<<<<<< HEAD
   m_Name: 8_Add_a_visual_effect
   m_EditorClassIdentifier: 
   <IndexInTutorial>k__BackingField: 8
@@ -1567,13 +2740,212 @@ MonoBehaviour:
   m_PageParagraphs:
   - {fileID: -6964190681431996317}
   - {fileID: -2046205848931109066}
+=======
+  m_Name: 2_Add_a_moving_platform
+  m_EditorClassIdentifier: 
+  <IndexInTutorial>k__BackingField: 2
+  Title:
+    m_Untranslated: Add a moving platform
+  m_LegacyParagraphs:
+    m_Items: []
+  m_PageParagraphs:
+  - {fileID: -7998422070015751571}
+  - {fileID: 4691215784292455810}
+  - {fileID: 4519933869115746840}
+>>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
   m_CameraSettings:
     m_CameraMode: 1
     m_FocusMode: 0
     m_Orthographic: 0
+<<<<<<< HEAD
     m_Size: 10.577178
     m_Pivot: {x: -13.792677, y: 7.8533344, z: 1.7831326}
     m_Rotation: {x: 0.13191591, y: 0.8255909, z: -0.21593761, w: 0.5043547}
+=======
+    m_Size: 24.269344
+    m_Pivot: {x: 2.0144787, y: -6.594491, z: -32.65203}
+    m_Rotation: {x: 0.05209747, y: 0.9478326, z: -0.21626097, w: 0.2283345}
+    m_FrameObject:
+      m_SceneGuid: 
+      m_GameObjectGuid: 
+      m_SerializedComponentType:
+        m_TypeName: 
+      m_ComponentIndex: 0
+      m_AssetObject: {fileID: 0}
+      m_Prefab: {fileID: 0}
+    m_Enabled: 1
+  NextButton:
+    m_Untranslated: Next
+  DoneButton:
+    m_Untranslated: Done
+  m_CompletedSound: {fileID: 0}
+  m_FaqEntries: []
+  m_AutoAdvance: 0
+  Showing:
+    m_PersistentCalls:
+      m_Calls: []
+  Shown:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: TutorialCallbacks, Assembly-CSharp-Editor
+        m_MethodName: EnableChildObjects
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Hidden_Area_2
+          m_BoolArgument: 0
+        m_CallState: 1
+  Staying:
+    m_PersistentCalls:
+      m_Calls: []
+  CriteriaValidated:
+    m_PersistentCalls:
+      m_Calls: []
+  MaskingSettingsChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  NonMaskingSettingsChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnBeforePageShown:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnAfterPageShown:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnTutorialPageStay:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnBeforeTutorialQuit:
+    m_PersistentCalls:
+      m_Calls: []
+  m_NextButton: Next
+  m_DoneButton: Done
+--- !u!114 &7876857493059971625
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 935228c0fd2628c4db5028980babef0b, type: 3}
+  m_Name: NarrativeParagraph
+  m_EditorClassIdentifier: Unity.Tutorials.Editor::Unity.Tutorials.Editor.Paragraphs.NarrativeParagraph
+  m_MaskingSettings:
+    m_MaskingEnabled: 0
+    m_UnmaskedViews: []
+    MaskPreset: {fileID: 0}
+  Text:
+    m_Untranslated: "Animation is a key component of bringing a scene to life. Characters can have animations, like walking, running, or jumping. \n\nObjects in the scene can also be animated, like a tree swaying in the wind or a ball bouncing up and down.\n\nGameObjects can be animated using Unity's animation tools, or animations can be imported from other applications.\n"
+--- !u!114 &8277151568432406543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff771ccdf4150419d9ff4d342b069aae, type: 3}
+  m_Name: 12_Continue_to_the_next_tutorial
+  m_EditorClassIdentifier: 
+  <IndexInTutorial>k__BackingField: 12
+  Title:
+    m_Untranslated: Continue to the next tutorial
+  m_LegacyParagraphs:
+    m_Items: []
+  m_PageParagraphs:
+  - {fileID: 3495099882479545373}
+  - {fileID: -4537500171695620103}
+  m_CameraSettings:
+    m_CameraMode: 0
+    m_FocusMode: 0
+    m_Orthographic: 0
+    m_Size: 0
+    m_Pivot: {x: 0, y: 0, z: 0}
+    m_Rotation: {x: 0, y: 0, z: 0, w: 0}
+    m_FrameObject:
+      m_SceneGuid: 
+      m_GameObjectGuid: 
+      m_SerializedComponentType:
+        m_TypeName: 
+      m_ComponentIndex: 0
+      m_AssetObject: {fileID: 0}
+      m_Prefab: {fileID: 0}
+    m_Enabled: 0
+  NextButton:
+    m_Untranslated: Next
+  DoneButton:
+    m_Untranslated: Done
+  m_CompletedSound: {fileID: 0}
+  m_FaqEntries: []
+  m_AutoAdvance: 0
+  Showing:
+    m_PersistentCalls:
+      m_Calls: []
+  Shown:
+    m_PersistentCalls:
+      m_Calls: []
+  Staying:
+    m_PersistentCalls:
+      m_Calls: []
+  CriteriaValidated:
+    m_PersistentCalls:
+      m_Calls: []
+  MaskingSettingsChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  NonMaskingSettingsChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnBeforePageShown:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnAfterPageShown:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnTutorialPageStay:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnBeforeTutorialQuit:
+    m_PersistentCalls:
+      m_Calls: []
+  m_NextButton: Next
+  m_DoneButton: Done
+--- !u!114 &8363453379071893818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff771ccdf4150419d9ff4d342b069aae, type: 3}
+  m_Name: 6_Add_background_audio
+  m_EditorClassIdentifier: 
+  <IndexInTutorial>k__BackingField: 6
+  Title:
+    m_Untranslated: Add background audio
+  m_LegacyParagraphs:
+    m_Items: []
+  m_PageParagraphs:
+  - {fileID: -8001570185796302744}
+  - {fileID: 667454810723026185}
+  m_CameraSettings:
+    m_CameraMode: 1
+    m_FocusMode: 0
+    m_Orthographic: 0
+    m_Size: 16.30306
+    m_Pivot: {x: 2.6566467, y: 2.787683, z: 1.4851028}
+    m_Rotation: {x: 0.12650023, y: 0.69367987, z: -0.12574427, w: 0.69785416}
+>>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
     m_FrameObject:
       m_SceneGuid: 
       m_GameObjectGuid: 
@@ -1622,7 +2994,11 @@ MonoBehaviour:
       m_Calls: []
   m_NextButton: Next
   m_DoneButton: Done
+<<<<<<< HEAD
 --- !u!114 &3762267693018914781
+=======
+--- !u!114 &8517551222966913683
+>>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1636,6 +3012,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.Tutorials.Editor::Unity.Tutorials.Editor.Paragraphs.MediaParagraph
   m_MaskingSettings:
     m_MaskingEnabled: 1
+<<<<<<< HEAD
     m_UnmaskedViews:
     - m_SelectorType: 1
       m_ViewType:
@@ -1715,6 +3092,18 @@ MonoBehaviour:
     m_AutoStart: 0
     m_Loop: 0
 --- !u!114 &4354943525080905563
+=======
+    m_UnmaskedViews: []
+    MaskPreset: {fileID: 0}
+  Media:
+    m_ContentType: 0
+    m_Image: {fileID: 2800000, guid: 32a74016ff74d495eb20ae4a158c2df8, type: 3}
+    m_VideoClip: {fileID: 0}
+    m_Url: 
+    m_AutoStart: 1
+    m_Loop: 1
+--- !u!114 &9161236134362927576
+>>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1723,6 +3112,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< HEAD
   m_Script: {fileID: 11500000, guid: d5b43af98cf241a48618341008f648cb, type: 3}
   m_Name: MediaParagraph
   m_EditorClassIdentifier: Unity.Tutorials.Editor::Unity.Tutorials.Editor.Paragraphs.MediaParagraph
@@ -2049,6 +3439,23 @@ MonoBehaviour:
   m_NextButton: Next
   m_DoneButton: Done
 --- !u!114 &7693301045479975054
+=======
+  m_Script: {fileID: 11500000, guid: 456c7c2b477e4253b9e4faf9ed4b18a9, type: 3}
+  m_Name: InstructionsParagraph
+  m_EditorClassIdentifier: Unity.Tutorials.Editor::Unity.Tutorials.Editor.Paragraphs.InstructionsParagraph
+  m_MaskingSettings:
+    m_MaskingEnabled: 0
+    m_UnmaskedViews: []
+    MaskPreset: {fileID: 0}
+  Title:
+    m_Untranslated: INSTRUCTIONS
+  Text:
+    m_Untranslated: "<b>1</b>.  Select the <b>Add (+)</b> button in the upper-left corner of the <b>Hierarchy</b> window, then select <b>3D Object</b> > <b>Cube</b>.\n\n<b>2</b>.  With the <b>Scale</b> tool, turn the cube into a platform the robot can stand on.\n\n<b>3</b>.  Add a material to the <b>Cube</b> GameObject (<b>Assets</b> > <b>Materials</b>).\n\n<b>4</b>.  In the <b>Hierarchy</b> window, right click the <b>Cube (1)</b> GameObject and select <b>Duplicate</b> or press <b>Ctrl</b>+<b>D</b> (macOS: <b>Cmd</b>+<b>D</b>). \n\n<b>5</b>.  Select the newly created duplicate GameObject and use the <b>Move</b> tool to position it up and towards the star.\n\n<b>6</b>.  Repeat steps 4 and 5 until you think you've created a set of stairs the robot can use to reach the star.\n\n<b>7</b>.  Enter Play mode and test your design.\n\n<b>Note</b>: You might need to experiment to get the position of these platforms just right. Game designers iterate many times on their designs; they change things, then test, then change more, and then test more. This process is called <b>level design,</b> a fundamental part of game development."
+  m_CriteriaCompletion: 0
+  m_Criteria:
+    m_Items: []
+--- !u!114 &9213903173752939384
+>>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2065,6 +3472,7 @@ MonoBehaviour:
     m_UnmaskedViews: []
     MaskPreset: {fileID: 0}
   Text:
+<<<<<<< HEAD
     m_Untranslated: "Congratulations! You just completed your first game in Unity. \n\nIn the next optional tutorial, you'll learn how to upload your project to <b>Unity Play</b> so that you can experience it in a web browser.  \n\nAfter you upload your game, you can choose to make it private, only viewable with a link, or publicly available.\n\nThis way, you can easily share your Unity creations with friends, family, and the wider Unity community. Sharing your game is a fun way to showcase your creativity and also get feedback from others."
 --- !u!114 &8179133984785814002
 MonoBehaviour:
@@ -2252,3 +3660,6 @@ MonoBehaviour:
     MaskPreset: {fileID: 0}
   Text:
     m_Untranslated: "Visual effects (VFX) are simulated motion effects added to enhance a scene, ranging from a subtle splash of water to a massive fiery explosion.\n\nUnity has tools to create visual effects and particles that can simulate fire, gas, rain, snow, and many other phenomena. \n\nWe've prepared some ready-to-use visual effects for your scene. \n\nAdd them to your scene for dramatic effect!\n"
+=======
+    m_Untranslated: In this final challenge, you'll combine all the skills you've learned so far to help the robot reach the final star.
+>>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8

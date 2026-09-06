@@ -1,5 +1,4 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 <<<<<<<< HEAD:motores3pjd3v2026/Assets/Scenes/GUI.unity.meta
 guid: ce8193a17db650442a448a797ccceb67
 DefaultImporter:
@@ -7,15 +6,6 @@ DefaultImporter:
 guid: 9655bdb16cfb4b64a9f3f95dbe65bfe9
 PrefabImporter:
 >>>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8:motores3pjd3v2026/Assets/Prefabs/Sphere.prefab.meta
-=======
-<<<<<<<< HEAD:motores3pjd3v2026/Assets/Scripts.meta
-guid: ba46eb93a85b3d54abe1b3ac63ec15fc
-folderAsset: yes
-========
-guid: 37f1293e0dfb8864281e941bcaaa3ba9
->>>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8:motores3pjd3v2026/Assets/Scenes/GUI.unity.meta
-DefaultImporter:
->>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
   externalObjects: {}
   userData: 
   assetBundleName: 
