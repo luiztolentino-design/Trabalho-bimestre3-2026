@@ -11,6 +11,8 @@ TagManager:
   - Cube_Spawn_Point_1
   - Cube_Spawn_Point_2
   - Coin
+  - CamP1
+  - CamP2
   layers:
   - Default
   - TransparentFX
@@ -18,8 +20,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - CamP1
+  - CamP2
   - 
   - 
   - 
@@ -57,3 +59,4 @@ TagManager:
   - Light Layer 5
   - Light Layer 6
   - Light Layer 7
+  m_MigratedRenderPipelines: []

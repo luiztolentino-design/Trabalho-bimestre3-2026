@@ -1,30 +1,37 @@
 using UnityEngine;
-using TMPro; // Necessário se estiver usando TextMeshPro
+using TMPro;
 
-public class CoinUIController : MonoBehaviour
+public class CoinUi : MonoBehaviour
 {
-    private TextMeshProUGUI textoMoedas;
+    [Header("Configuração")]
+    [Tooltip("Defina se este texto é do Jogador 1 ou Jogador 2")]
+    public int PlayerID = 1;
+
+    private TextMeshProUGUI _textoMoedas;
 
     private void Awake()
     {
-        textoMoedas = GetComponent<TextMeshProUGUI>();
+        _textoMoedas = GetComponent<TextMeshProUGUI>();
     }
 
-    // Quando a interface é ativada, ela se INSCREVE no canal
     private void OnEnable()
     {
-        PlayerOM.OnCoinCountChanged += AtualizarTextoMoedas;
+        // Inscreve no Observer
+        PlayerObserverManager.OnCoinCollected += AtualizarTextoMoedas;
     }
 
-    // Quando a interface é desativada, ela se DESINSCREVE (Evita memory leaks/erros)
     private void OnDisable()
     {
-        PlayerOM.OnCoinCountChanged -= AtualizarTextoMoedas;
+        // Desinscreve do Observer
+        PlayerObserverManager.OnCoinCollected -= AtualizarTextoMoedas;
     }
 
-    // Método que processa a notificação recebida do PlayerOM
-    private void AtualizarTextoMoedas(int totalAtual)
+    private void AtualizarTextoMoedas(int idJogador, int totalMoedas)
     {
-        textoMoedas.text = "Moedas: " + totalAtual;
+        // Atualiza apenas se a notificação for para este jogador
+        if (idJogador == PlayerID && _textoMoedas != null)
+        {
+            _textoMoedas.text = $"P{PlayerID} Moedas: {totalMoedas}";
+        }
     }
 }
