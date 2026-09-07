@@ -1,6 +1,7 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!114 &-9137891526698262352
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -707,6 +708,8 @@ MonoBehaviour:
   Text:
     m_Untranslated: With your build complete, you're ready to publish it to <b>Unity Play</b> so that you can play your game online and easily share it with others, if you want.
 >>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
+=======
+>>>>>>> parent of eff3f27 (commit2.final)
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -719,10 +722,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f107dc6d4c984c45bdafd3bb15f98f0, type: 3}
   m_Name: T4 - Publish to Unity Play
   m_EditorClassIdentifier: 
-  m_Version: 1
   TutorialTitle:
     m_Untranslated: Publish to Unity Play
+  m_ProgressTrackingEnabled: 1
   m_LessonId: 3d2235c5-8bec-4d30-bea3-8343b3ecc2a8
+<<<<<<< HEAD
   m_Pages:
     m_Items:
 <<<<<<< HEAD
@@ -739,7 +743,11 @@ MonoBehaviour:
     - {fileID: -8533829917071639892}
 >>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
   m_SceneManagementBehavior: 1
+=======
+  m_Version: 1
+>>>>>>> parent of eff3f27 (commit2.final)
   m_ReturnToPreviousScenes: 1
+  m_SceneManagementBehavior: 1
   m_Scenes: []
   m_DefaultSceneCameraSettings:
     m_CameraMode: 1
@@ -757,9 +765,18 @@ MonoBehaviour:
       m_AssetObject: {fileID: 0}
       m_Prefab: {fileID: 0}
     m_Enabled: 0
-  m_ProgressTrackingEnabled: 1
   m_WindowLayout: {fileID: 0}
+  m_Pages:
+    m_Items:
+    - {fileID: 11400000, guid: 24e05e1bc46d36c40bded17aed8bea6c, type: 2}
+    - {fileID: 11400000, guid: d9ec8c0fe37add440a9f1ded138a6d8d, type: 2}
+    - {fileID: 11400000, guid: 9ad978826897c4f3985bec5e14332d0f, type: 2}
+    - {fileID: 11400000, guid: e3462a524e8834f258622ae7f827f408, type: 2}
+    - {fileID: 11400000, guid: ff7edbaf318e0c34887d2c1b3b3c624f, type: 2}
   CompletionDialog: {fileID: 0}
+  Modified:
+    m_PersistentCalls:
+      m_Calls: []
   Initiated:
     m_PersistentCalls:
       m_Calls:
@@ -802,6 +819,7 @@ MonoBehaviour:
   m_Scene: {fileID: 0}
   m_TutorialTitle: 
   m_FaqEntries: []
+<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!114 &2310103255131541036
 MonoBehaviour:
@@ -1365,3 +1383,5 @@ MonoBehaviour:
     m_Items: []
 =======
 >>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
+=======
+>>>>>>> parent of eff3f27 (commit2.final)

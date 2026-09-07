@@ -13,13 +13,19 @@ namespace StarterAssets
     public class ThirdPersonController : MonoBehaviour
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         [Header("Configurações Multiplayer")]
         public int PlayerID = 1;
         public float BonusVelocidadePorMoeda = 0.5f;
 
+=======
+>>>>>>> parent of eff3f27 (commit2.final)
         [Header("Player")]
+        [Tooltip("Move speed of the character in m/s")]
         public float MoveSpeed = 2.0f;
+        [Tooltip("Sprint speed of the character in m/s")]
         public float SprintSpeed = 5.335f;
+<<<<<<< HEAD
         [Range(0.0f, 0.3f)] public float RotationSmoothTime = 0.12f;
 =======
         [Header("Multiplayer & Atividade")]
@@ -30,11 +36,16 @@ public Camera PlayerCamera;
         public float MoveSpeed = 2.0f;
         [Tooltip("Sprint speed of the character in m/s")]
         public float SprintSpeed = 5.335f;
+=======
+>>>>>>> parent of eff3f27 (commit2.final)
         [Tooltip("How fast the character turns to face movement direction")]
         [Range(0.0f, 0.3f)]
         public float RotationSmoothTime = 0.12f;
         [Tooltip("Acceleration and deceleration")]
+<<<<<<< HEAD
 >>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
+=======
+>>>>>>> parent of eff3f27 (commit2.final)
         public float SpeedChangeRate = 10.0f;
 
         public AudioClip LandingAudioClip;
@@ -42,10 +53,18 @@ public Camera PlayerCamera;
         [Range(0, 1)] public float FootstepAudioVolume = 0.5f;
 
         [Space(10)]
+        [Tooltip("The height the player can jump")]
         public float JumpHeight = 1.2f;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        [Tooltip("The character uses its own gravity value. The engine default is -9.81f")]
+>>>>>>> parent of eff3f27 (commit2.final)
         public float Gravity = -15.0f;
+        [Space(10)]
+        [Tooltip("Time required to pass before being able to jump again. Set to 0f to instantly jump again")]
         public float JumpTimeout = 0.50f;
+<<<<<<< HEAD
 =======
         [Tooltip("The character uses its own gravity value. The engine default is -9.81f")]
         public float Gravity = -15.0f;
@@ -54,13 +73,23 @@ public Camera PlayerCamera;
         public float JumpTimeout = 0.50f;
         [Tooltip("Time required to pass before entering the fall state. Useful for walking down stairs")]
 >>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
+=======
+        [Tooltip("Time required to pass before entering the fall state. Useful for walking down stairs")]
+>>>>>>> parent of eff3f27 (commit2.final)
         public float FallTimeout = 0.15f;
 
         [Header("Player Grounded")]
+        [Tooltip("If the character is grounded or not. Not part of the CharacterController built in grounded check")]
         public bool Grounded = true;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        [Tooltip("Useful for rough ground")]
+>>>>>>> parent of eff3f27 (commit2.final)
         public float GroundedOffset = -0.14f;
+        [Tooltip("The radius of the grounded check. Should match the radius of the CharacterController")]
         public float GroundedRadius = 0.28f;
+<<<<<<< HEAD
 =======
         [Tooltip("Useful for rough ground")]
         public float GroundedOffset = -0.14f;
@@ -68,17 +97,29 @@ public Camera PlayerCamera;
         public float GroundedRadius = 0.28f;
         [Tooltip("What layers the character uses as ground")]
 >>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
+=======
+        [Tooltip("What layers the character uses as ground")]
+>>>>>>> parent of eff3f27 (commit2.final)
         public LayerMask GroundLayers;
 
         [Header("Cinemachine")]
+        [Tooltip("The follow target set in the Cinemachine Virtual Camera that the camera will follow")]
         public GameObject CinemachineCameraTarget;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        [Tooltip("How far in degrees can you move the camera up")]
+>>>>>>> parent of eff3f27 (commit2.final)
         public float TopClamp = 70.0f;
+        [Tooltip("How far in degrees can you move the camera down")]
         public float BottomClamp = -30.0f;
+        [Tooltip("Additional degress to override the camera. Useful for fine tuning camera position when locked")]
         public float CameraAngleOverride = 0.0f;
+        [Tooltip("For locking the camera position on all axis")]
         public bool LockCameraPosition = false;
-        public Vector2 LookSensitivity = new Vector2(1.5f, 1.0f);
+        public Vector2 LookSensitivity = new Vector2(7.5f, 5.0f);
 
+<<<<<<< HEAD
 =======
         [Tooltip("How far in degrees can you move the camera up")]
         public float TopClamp = 70.0f;
@@ -92,14 +133,20 @@ public Camera PlayerCamera;
 
         // cinemachine
 >>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
+=======
+        // cinemachine
+>>>>>>> parent of eff3f27 (commit2.final)
         private float _cinemachineTargetYaw;
         private float _cinemachineTargetPitch;
-        private Vector3 _cameraStartingLocalPosition;
-        private Quaternion _cameraStartingLocalRotation;
+
+        // Camera starting position and rotation
+        private Vector3 _cameraStartingPosition;
+        private Quaternion _cameraStartingRotation;
 
 <<<<<<< HEAD
         public bool IsRespawning { get; set; } = false;
 
+<<<<<<< HEAD
 =======
         // Camera starting position and rotation
         private Vector3 _cameraStartingPosition;
@@ -109,6 +156,9 @@ public Camera PlayerCamera;
 
         // player
 >>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
+=======
+        // player
+>>>>>>> parent of eff3f27 (commit2.final)
         private float _speed;
         private float _animationBlend;
         private float _targetRotation = 0.0f;
@@ -117,14 +167,20 @@ public Camera PlayerCamera;
         private float _terminalVelocity = 53.0f;
         
         // --- ADICIONADO PARA A ATIVIDADE ---
+<<<<<<< HEAD
         private int _moedasColetadas = 0;
         // ------------------------------------
 
+=======
+>>>>>>> parent of eff3f27 (commit2.final)
         private int _moedasColetadas = 0;
+        // ------------------------------------
 
+        // timeout deltatime
         private float _jumpTimeoutDelta;
         private float _fallTimeoutDelta;
 
+        // animation IDs
         private int _animIDSpeed;
         private int _animIDGrounded;
         private int _animIDJump;
@@ -147,7 +203,7 @@ public Camera PlayerCamera;
             get
             {
 #if ENABLE_INPUT_SYSTEM
-                return _playerInput != null && _playerInput.currentControlScheme == "KeyboardMouse";
+                return _playerInput.currentControlScheme == "KeyboardMouse";
 #else
                 return false;
 #endif
@@ -157,41 +213,25 @@ public Camera PlayerCamera;
 <<<<<<< HEAD
         private void Awake()
         {
-            // Busca a câmera principal de acordo com o jogador
-            Camera[] cameras = FindObjectsByType<Camera>(FindObjectsSortMode.None);
-            foreach (Camera cam in cameras)
+            if (_mainCamera == null)
             {
-                if ((PlayerID == 1 && cam.gameObject.name.Contains("1")) ||
-                    (PlayerID == 2 && cam.gameObject.name.Contains("2")))
-                {
-                    _mainCamera = cam.gameObject;
-                    break;
-                }
-            }
-
-            if (_mainCamera == null && Camera.main != null)
-            {
-                _mainCamera = Camera.main.gameObject;
+                _mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
             }
         }
 
         private void Start()
         {
-            _cinemachineTargetYaw = transform.eulerAngles.y;
+            _cinemachineTargetYaw = CinemachineCameraTarget.transform.rotation.eulerAngles.y;
             _hasAnimator = TryGetComponent(out _animator);
             _controller = GetComponent<CharacterController>();
             _input = GetComponent<StarterAssetsInputs>();
 #if ENABLE_INPUT_SYSTEM 
             _playerInput = GetComponent<PlayerInput>();
 #endif
-            VincularCinemachine();
             AssignAnimationIDs();
 
-            if (CinemachineCameraTarget != null)
-            {
-                _cameraStartingLocalPosition = CinemachineCameraTarget.transform.localPosition;
-                _cameraStartingLocalRotation = CinemachineCameraTarget.transform.localRotation;
-            }
+            _cameraStartingPosition = CinemachineCameraTarget.transform.position;
+            _cameraStartingRotation = CinemachineCameraTarget.transform.rotation;
 
             _jumpTimeoutDelta = JumpTimeout;
             _fallTimeoutDelta = FallTimeout;
@@ -199,8 +239,9 @@ public Camera PlayerCamera;
 
         private void Update()
         {
-            GroundedCheck();
+            _hasAnimator = TryGetComponent(out _animator);
             JumpAndGravity();
+            GroundedCheck();
             Move();
         }
 
@@ -257,6 +298,7 @@ public Camera PlayerCamera;
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         private void VincularCinemachine()
         {
             string nomeVirtualCam = (PlayerID == 1) ? "PlayerFollowCamera1" : "PlayerFollowCamera2";
@@ -288,18 +330,16 @@ public Camera PlayerCamera;
             }
         }
 
+=======
+>>>>>>> parent of eff3f27 (commit2.final)
         private void OnTriggerEnter(Collider other)
         {
             if (other.CompareTag("Coin"))
             {
                 Destroy(other.gameObject);
                 _moedasColetadas++;
-
-                // Aumenta a velocidade do jogador ao coletar moedas
-                MoveSpeed += BonusVelocidadePorMoeda;
-                SprintSpeed += BonusVelocidadePorMoeda;
-
-                PlayerObserverManager.NotifyCoinCollected(PlayerID, _moedasColetadas);
+        
+                PlayerOM.UpdateCoinCount(_moedasColetadas);
             }
         }
 =======
@@ -341,19 +381,26 @@ public Camera PlayerCamera;
             Grounded = Physics.CheckSphere(spherePosition, GroundedRadius, GroundLayers, QueryTriggerInteraction.Ignore);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
             if (_hasAnimator) _animator.SetBool(_animIDGrounded, Grounded);
 =======
+=======
+>>>>>>> parent of eff3f27 (commit2.final)
             if (_hasAnimator)
             {
                 _animator.SetBool(_animIDGrounded, Grounded);
             }
+<<<<<<< HEAD
 >>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
+=======
+>>>>>>> parent of eff3f27 (commit2.final)
         }
 
         private void CameraRotation()
         {
             if (IsRespawning)
             {
+<<<<<<< HEAD
 <<<<<<< HEAD
                 _cinemachineTargetYaw = transform.eulerAngles.y;
                 _cinemachineTargetPitch = 0f;
@@ -365,6 +412,12 @@ public Camera PlayerCamera;
                 CinemachineCameraTarget.transform.position = _cameraStartingPosition;
                 CinemachineCameraTarget.transform.rotation = _cameraStartingRotation;
 >>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
+=======
+                _cinemachineTargetYaw = 0f;
+                _cinemachineTargetPitch = 0f;
+                CinemachineCameraTarget.transform.position = _cameraStartingPosition;
+                CinemachineCameraTarget.transform.rotation = _cameraStartingRotation;
+>>>>>>> parent of eff3f27 (commit2.final)
                 IsRespawning = false;
                 return;
             }
@@ -376,6 +429,7 @@ public Camera PlayerCamera;
                 _cinemachineTargetPitch += _input.look.y * deltaTimeMultiplier * LookSensitivity.y;
             }
 <<<<<<< HEAD
+<<<<<<< HEAD
             // Auto-alinhamento automático com a frente do robô
             else if (_input.move.sqrMagnitude >= _threshold)
             {
@@ -383,6 +437,8 @@ public Camera PlayerCamera;
             }
 =======
 >>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
+=======
+>>>>>>> parent of eff3f27 (commit2.final)
 
             _cinemachineTargetYaw = ClampAngle(_cinemachineTargetYaw, float.MinValue, float.MaxValue);
             _cinemachineTargetPitch = ClampAngle(_cinemachineTargetPitch, BottomClamp, TopClamp);
@@ -417,6 +473,7 @@ public Camera PlayerCamera;
             if (_input.move != Vector2.zero)
             {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 float targetRotationAngle = Mathf.Atan2(inputDirection.x, inputDirection.z) * Mathf.Rad2Deg;
                 if (_mainCamera != null) targetRotationAngle += _mainCamera.transform.eulerAngles.y;
 
@@ -424,6 +481,9 @@ public Camera PlayerCamera;
 =======
                 _targetRotation = Mathf.Atan2(inputDirection.x, inputDirection.z) * Mathf.Rad2Deg + _mainCamera.transform.eulerAngles.y;
 >>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
+=======
+                _targetRotation = Mathf.Atan2(inputDirection.x, inputDirection.z) * Mathf.Rad2Deg + _mainCamera.transform.eulerAngles.y;
+>>>>>>> parent of eff3f27 (commit2.final)
                 float rotation = Mathf.SmoothDampAngle(transform.eulerAngles.y, _targetRotation, ref _rotationVelocity, RotationSmoothTime);
                 transform.rotation = Quaternion.Euler(0.0f, rotation, 0.0f);
             }
@@ -475,6 +535,7 @@ public Camera PlayerCamera;
             return Mathf.Clamp(lfAngle, lfMin, lfMax);
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
         public void ResetCameraRotation(float targetYaw)
 {
     _cinemachineTargetYaw = targetYaw;
@@ -488,6 +549,9 @@ public Camera PlayerCamera;
 }
 =======
 
+=======
+
+>>>>>>> parent of eff3f27 (commit2.final)
         private void OnDrawGizmosSelected()
         {
             Color transparentGreen = new Color(0.0f, 1.0f, 0.0f, 0.35f);
@@ -523,6 +587,9 @@ public Camera PlayerCamera;
             _cinemachineTargetPitch = 0f;
             CinemachineCameraTarget.transform.rotation = Quaternion.Euler(_cinemachineTargetPitch, _cinemachineTargetYaw, 0f);
         }
+<<<<<<< HEAD
 >>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
+=======
+>>>>>>> parent of eff3f27 (commit2.final)
     }
 }

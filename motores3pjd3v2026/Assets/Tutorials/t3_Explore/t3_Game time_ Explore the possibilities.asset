@@ -1,6 +1,7 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!114 &-8612261561486648624
 =======
 --- !u!114 &-8420916506891149990
@@ -1753,6 +1754,8 @@ MonoBehaviour:
   m_NextButton: Next
   m_DoneButton: Done
 >>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
+=======
+>>>>>>> parent of eff3f27 (commit2.final)
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1765,6 +1768,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f107dc6d4c984c45bdafd3bb15f98f0, type: 3}
   m_Name: t3_Game time_ Explore the possibilities
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   m_Version: 1
   TutorialTitle:
     m_Untranslated: Explore the possibilities
@@ -1802,6 +1806,15 @@ MonoBehaviour:
 >>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
   m_SceneManagementBehavior: 1
   m_ReturnToPreviousScenes: 0
+=======
+  TutorialTitle:
+    m_Untranslated: Explore the possibilities
+  m_ProgressTrackingEnabled: 1
+  m_LessonId: 9c776b80-6c96-4ec1-801c-f77ac9ac63ab
+  m_Version: 1
+  m_ReturnToPreviousScenes: 0
+  m_SceneManagementBehavior: 1
+>>>>>>> parent of eff3f27 (commit2.final)
   m_Scenes: []
   m_DefaultSceneCameraSettings:
     m_CameraMode: 0
@@ -1819,9 +1832,32 @@ MonoBehaviour:
       m_AssetObject: {fileID: 0}
       m_Prefab: {fileID: 0}
     m_Enabled: 0
+<<<<<<< HEAD
   m_ProgressTrackingEnabled: 1
   m_WindowLayout: {fileID: 0}
   CompletionDialog: {fileID: 0}
+=======
+  m_WindowLayout: {fileID: 0}
+  m_Pages:
+    m_Items:
+    - {fileID: 11400000, guid: 08a64544f80304277b71763c6a097c6f, type: 2}
+    - {fileID: 11400000, guid: c09b902499c874fbc96d4d504a11269a, type: 2}
+    - {fileID: 11400000, guid: e43a9032272a742aca98d4f34d891eb5, type: 2}
+    - {fileID: 11400000, guid: 3ef3452b7779b4032a540026d9d65271, type: 2}
+    - {fileID: 11400000, guid: 1974a190db901a747bd2a1dc20d95df6, type: 2}
+    - {fileID: 11400000, guid: 84b8dc4bb9da74f3b97606464072ac72, type: 2}
+    - {fileID: 11400000, guid: 9bdf7f0bd2701454f90bb7dde8f2d578, type: 2}
+    - {fileID: 11400000, guid: 9ee9bb436e37e4cd396b67e797fe5764, type: 2}
+    - {fileID: 11400000, guid: af4109ff44911994f8d86222ff49584e, type: 2}
+    - {fileID: 11400000, guid: 43e26db414ee349d0aecf8498a59b50c, type: 2}
+    - {fileID: 11400000, guid: 47fa63b3ff6b84ab3a4015dd0ba35c32, type: 2}
+    - {fileID: 11400000, guid: a0d58c23679b8314ca641bc63d1f56e1, type: 2}
+    - {fileID: 11400000, guid: 45a771ced48a244609aef5e5ba9ec520, type: 2}
+  CompletionDialog: {fileID: 0}
+  Modified:
+    m_PersistentCalls:
+      m_Calls: []
+>>>>>>> parent of eff3f27 (commit2.final)
   Initiated:
     m_PersistentCalls:
       m_Calls: []
@@ -1840,6 +1876,7 @@ MonoBehaviour:
   m_Scene: {fileID: 0}
   m_TutorialTitle: 
   m_FaqEntries: []
+<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!114 &288935031537292037
 =======
@@ -3663,3 +3700,5 @@ MonoBehaviour:
 =======
     m_Untranslated: In this final challenge, you'll combine all the skills you've learned so far to help the robot reach the final star.
 >>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
+=======
+>>>>>>> parent of eff3f27 (commit2.final)

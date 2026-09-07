@@ -1,6 +1,7 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!114 &-8294930993225875323
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -124,6 +125,8 @@ MonoBehaviour:
   m_NextButton: Next
   m_DoneButton: Done
 >>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
+=======
+>>>>>>> parent of eff3f27 (commit2.final)
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136,10 +139,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f107dc6d4c984c45bdafd3bb15f98f0, type: 3}
   m_Name: t5_Future learning! A reference
   m_EditorClassIdentifier: 
-  m_Version: 1
   TutorialTitle:
     m_Untranslated: Future learning
+  m_ProgressTrackingEnabled: 1
   m_LessonId: 9d20f6d6-ff53-4698-91ce-846a53d5f5d2
+<<<<<<< HEAD
   m_Pages:
     m_Items:
 <<<<<<< HEAD
@@ -148,7 +152,11 @@ MonoBehaviour:
     - {fileID: -853737769734517262}
 >>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
   m_SceneManagementBehavior: 1
+=======
+  m_Version: 1
+>>>>>>> parent of eff3f27 (commit2.final)
   m_ReturnToPreviousScenes: 1
+  m_SceneManagementBehavior: 1
   m_Scenes: []
   m_DefaultSceneCameraSettings:
     m_CameraMode: 0
@@ -166,9 +174,14 @@ MonoBehaviour:
       m_AssetObject: {fileID: 0}
       m_Prefab: {fileID: 0}
     m_Enabled: 0
-  m_ProgressTrackingEnabled: 1
   m_WindowLayout: {fileID: 0}
+  m_Pages:
+    m_Items:
+    - {fileID: 11400000, guid: ecad781e8ed75461482bc20720ea4b17, type: 2}
   CompletionDialog: {fileID: 0}
+  Modified:
+    m_PersistentCalls:
+      m_Calls: []
   Initiated:
     m_PersistentCalls:
       m_Calls:
@@ -211,6 +224,7 @@ MonoBehaviour:
   m_Scene: {fileID: 0}
   m_TutorialTitle: 
   m_FaqEntries: []
+<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!114 &6387129168605792553
 =======
@@ -340,3 +354,5 @@ MonoBehaviour:
   m_DoneButton: Done
 =======
 >>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
+=======
+>>>>>>> parent of eff3f27 (commit2.final)
