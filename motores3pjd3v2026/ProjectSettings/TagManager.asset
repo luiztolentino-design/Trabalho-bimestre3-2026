@@ -3,19 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags:
-  - CinemachineTarget
-  - Hidden_Area_1
-  - Hidden_Area_2
-  - Hidden_Area_3
-  - Cube_Spawn_Point_1
-  - Cube_Spawn_Point_2
-  - Coin
-<<<<<<< HEAD
-  - CamP1
-  - CamP2
-=======
->>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -23,17 +11,10 @@ TagManager:
   - 
   - Water
   - UI
-<<<<<<< HEAD
-  - CamP1
-  - CamP2
   - 
   - 
-=======
   - 
   - 
-  - P1_Layer
-  - P2_Layer
->>>>>>> 17c5f33cbb18fa10b6eb2b30d74335c4eeb832c8
   - 
   - 
   - 
@@ -62,11 +43,4 @@ TagManager:
     locked: 0
   m_RenderingLayers:
   - Default
-  - Light Layer 1
-  - Light Layer 2
-  - Light Layer 3
-  - Light Layer 4
-  - Light Layer 5
-  - Light Layer 6
-  - Light Layer 7
   m_MigratedRenderPipelines: []
