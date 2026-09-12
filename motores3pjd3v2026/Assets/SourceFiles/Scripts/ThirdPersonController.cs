@@ -95,7 +95,6 @@ namespace StarterAssets
 
         private void Awake()
         {
-            // Busca a câmera principal de acordo com o jogador
             Camera[] cameras = FindObjectsByType<Camera>(FindObjectsSortMode.None);
             foreach (Camera cam in cameras)
             {
@@ -119,8 +118,10 @@ namespace StarterAssets
             _hasAnimator = TryGetComponent(out _animator);
             _controller = GetComponent<CharacterController>();
             _input = GetComponent<StarterAssetsInputs>();
+
 #if ENABLE_INPUT_SYSTEM 
             _playerInput = GetComponent<PlayerInput>();
+            ConfigurarControlScheme();
 #endif
             VincularCinemachine();
             AssignAnimationIDs();
@@ -134,6 +135,25 @@ namespace StarterAssets
             _jumpTimeoutDelta = JumpTimeout;
             _fallTimeoutDelta = FallTimeout;
         }
+
+#if ENABLE_INPUT_SYSTEM
+        private void ConfigurarControlScheme()
+        {
+            if (_playerInput == null) return;
+
+            // Substitua estes nomes caso seus Control Schemes no Input Actions tenham nomes diferentes
+            string esquema = (PlayerID == 1) ? "Player1_scheme" : "Player2_scheme";
+
+            if (Gamepad.all.Count >= PlayerID)
+            {
+                _playerInput.SwitchCurrentControlScheme(esquema, Gamepad.all[PlayerID - 1]);
+            }
+            else if (Keyboard.current != null)
+            {
+                _playerInput.SwitchCurrentControlScheme(esquema, Keyboard.current);
+            }
+        }
+#endif
 
         private void Update()
         {
@@ -155,11 +175,9 @@ namespace StarterAssets
             if (vcamObj == null && PlayerID == 1) vcamObj = GameObject.Find("PlayerFollowCamera");
             if (vcamObj == null) return;
 
-            // Garante que o target seja o PlayerCameraRoot
             Transform rootFilho = transform.Find("PlayerCameraRoot");
             if (rootFilho != null) CinemachineCameraTarget = rootFilho.gameObject;
 
-            // Cinemachine v3
             var vcamV3 = vcamObj.GetComponent<Unity.Cinemachine.CinemachineCamera>();
             if (vcamV3 != null)
             {
@@ -168,7 +186,6 @@ namespace StarterAssets
                 return;
             }
 
-            // Cinemachine v2
             var vcamV2 = vcamObj.GetComponent<Unity.Cinemachine.CinemachineVirtualCamera>();
             if (vcamV2 != null)
             {
@@ -185,7 +202,6 @@ namespace StarterAssets
                 Destroy(other.gameObject);
                 _moedasColetadas++;
 
-                // Aumenta a velocidade do jogador ao coletar moedas
                 MoveSpeed += BonusVelocidadePorMoeda;
                 SprintSpeed += BonusVelocidadePorMoeda;
 
@@ -228,7 +244,6 @@ namespace StarterAssets
                 _cinemachineTargetYaw += _input.look.x * deltaTimeMultiplier * LookSensitivity.x;
                 _cinemachineTargetPitch += _input.look.y * deltaTimeMultiplier * LookSensitivity.y;
             }
-            // Auto-alinhamento automático com a frente do robô
             else if (_input.move.sqrMagnitude >= _threshold)
             {
                 _cinemachineTargetYaw = Mathf.LerpAngle(_cinemachineTargetYaw, transform.eulerAngles.y, Time.deltaTime * 4.0f);
@@ -320,16 +335,17 @@ namespace StarterAssets
             if (lfAngle > 360f) lfAngle -= 360f;
             return Mathf.Clamp(lfAngle, lfMin, lfMax);
         }
-        public void ResetCameraRotation(float targetYaw)
-{
-    _cinemachineTargetYaw = targetYaw;
-    _cinemachineTargetPitch = 0f;
-    IsRespawning = true;
 
-    if (CinemachineCameraTarget != null)
-    {
-        CinemachineCameraTarget.transform.rotation = Quaternion.Euler(_cinemachineTargetPitch, _cinemachineTargetYaw, 0.0f);
-    }
-}
+        public void ResetCameraRotation(float targetYaw)
+        {
+            _cinemachineTargetYaw = targetYaw;
+            _cinemachineTargetPitch = 0f;
+            IsRespawning = true;
+
+            if (CinemachineCameraTarget != null)
+            {
+                CinemachineCameraTarget.transform.rotation = Quaternion.Euler(_cinemachineTargetPitch, _cinemachineTargetYaw, 0.0f);
+            }
+        }
     }
 }

@@ -628,11 +628,11 @@ PrefabInstance:
       objectReference: {fileID: 1913624407}
     - target: {fileID: 7477988938871578672, guid: 332df604d1fc7fd46ae4013ce9b4a5d6, type: 3}
       propertyPath: m_DefaultActionMap
-      value: cf2ba315-204d-487a-9689-30a5f1ca9ff3
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 7477988938871578672, guid: 332df604d1fc7fd46ae4013ce9b4a5d6, type: 3}
       propertyPath: m_DefaultControlScheme
-      value: 
+      value: Player1_scheme
       objectReference: {fileID: 0}
     - target: {fileID: 7477988938871578672, guid: 332df604d1fc7fd46ae4013ce9b4a5d6, type: 3}
       propertyPath: m_NeverAutoSwitchControlSchemes
@@ -1712,6 +1712,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e89019648865f184085f9aef38ea891b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::P2KeyboardController
+  _inputs: {fileID: 0}
 --- !u!1 &1108780415
 GameObject:
   m_ObjectHideFlags: 0
